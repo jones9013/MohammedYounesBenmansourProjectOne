@@ -39,6 +39,11 @@ h3,
     padding: 0;
 }
 
+img {
+    height: 100%;
+    width:100%;
+}
+
 
 
 // header
@@ -62,42 +67,63 @@ header nav ul  {
 
 
 
+
 // // making position ( relative and absolute ) for making the h1 and content over the home image 
 
     // first i set the image to relative
 
-header .home-header {                 
-    position: relative;
-    text-align: left;
-    height: 100%;
-    background-color: yellow;
-}
+// header .home-header {                 
+//     position: relative;
+//     text-align: left;
+//     height: 100%;
+//     background-color: yellow;
+// }
 
 // i set the height and width for both ( container and image )
-.img-home-container {
-    height: 100%;
-    background-color: red;
-}
+// .img-home-container {
+//     height: 100%;
+//     background-color: red;
+// }
 
- img {
-    height: 100%;
-    width:100%;
-}
+
 
 //  Positionning the text over the image 
-.home-content {
-    width: 20%;
-    height: 100%;
-    position: absolute;
-    top: 20%;
-    left: 20%;
+// .home-content {
+//     width: 20%;
+//     height: 100%;
+//     position: absolute;
+//     top: 20%;
+//     left: 20%;
 
-    }
+//     }
 
     h1{
         font-size: 2.5em;
         line-height: 1.2;
     }
+
+
+/* Inline #5 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+
+.home-header {
+}
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-home-container {
+  position: relative;
+}
+
+.home-content {
+  width: 20%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+}
+
 
     // mediaqerry to make the text over the image responsive
 
@@ -113,9 +139,9 @@ header .home-header {
 
             //   section for categories i will put the class categories 
 
-            .categories {
-                display: none;
-            }
+            // .categories {
+            //     display: none;
+            // }
         
 
 
@@ -125,67 +151,221 @@ header .home-header {
 
 // section 2 
 
-#blog {
-    height: 100vh;
-}
+// #blog {
+//     height: 100vh;
+// }
 
 // First i flex the three images 
 
-#blog ul {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: space-between;
-    align-items: center;
-  }
+// #blog ul {
+//     display: flex;
+//     width: 100%;
+//     height: 100%;
+//     justify-content: space-between;
+//     align-items: center;
+//   }
   
-#blog img {
-    width: 100%;
-  }
+// #blog img {
+//     width: 100%;
+//   }
   
-#blog ul li {
-    width: calc(33% - 20px);
-  }
+// #blog ul li {
+//     width: calc(33% - 20px);
+//   }
 
 
 // to make all of them in different lines
 
-#blog > ul:nth-child(1) > li:nth-child(1) {
-    margin-top: 20px;
-  }
+// #blog > ul:nth-child(1) > li:nth-child(1) {
+//     margin-top: 20px;
+//   }
 
-  #blog > ul:nth-child(1) > li:nth-child(3) {
-    margin-top: 20px;
-  }
+//   #blog > ul:nth-child(1) > li:nth-child(3) {
+//     margin-top: 20px;
+//   }
 
-  #blog > ul:nth-child(1) > li:nth-child(2) {
-    margin-bottom: 20px;
-  }
+//   #blog > ul:nth-child(1) > li:nth-child(2) {
+//     margin-bottom: 20px;
+//   }
   
 
 // making positions relative and absolute 
 
 /* Inline #1 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
 
-ul {
-    position: relative;
+// ul {
+//     position: relative;
+    
+//   }
+  
+//   .categories {
+//     position: absolute;
+//     top: 70%;
+//     background-color: white;
+//     width: 120px;
+//     text-align: center;
+//     font-size: 15px;
+//   }
+  
+// trying the new update 
+
+// #blog .img-plants img {
+//         width: calc(33% - 20px);
+//       }
+    
+// .images-blog {
+//     display: flex;
+// }
+
+// .img-plants {
+//     position: relative;
+// }
+
+
+// .categories {
+//     position: absolute;
+// }
+
+
+// trying the second new update
+
+// i set the height for the section of blog
+
+#blog {
+        height: 100vh;
+    }
+
+
+//  i flex the images
+
+#blog ul {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+      }
+    
+
+.img-cetegories img {
+            width: 100%;
+            height: auto;
+          }
+//    I flex the li inside ( image + text ) to make them responsive and I set position relative 
+#blog ul li {
+            width: calc(33% - 20px);
+            display: flex;
+            position: relative;   
+          }
+
+          .img-cetegories {
+            position: relative;
+            height: auto;
     
   }
+
+//   I positionne the text absolute to make it over the image
   
-  .categories {
+  .text-categories {
     position: absolute;
-    top: 70%;
+    top: 85%;
     background-color: white;
     width: 120px;
     text-align: center;
     font-size: 15px;
   }
+
   
+// to make all of them in different lines
+
+// #blog > ul:nth-child(1) > li:nth-child(1) {
+//     margin-top: 20px;
+//   }
+
+//   #blog > ul:nth-child(1) > li:nth-child(3) {
+//     margin-top: 20px;
+//   }
+
+//   #blog > ul:nth-child(1) > li:nth-child(2) {
+//     margin-bottom: 20px;
+//   }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // The class of gallery 
 
+// adding the height for the whole section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gallery {
+    height: 120vh;
+}
+
+
+// center the h2 and the button
+h2,
+.button-gallery {
+    text-align: center;
+}
+
+// adding padding, it was too close the gallery images
+
+.gallery .button-gallery {
+    padding-top: 50px;
+}
+
+
+.gallery .button-gallery button {
+    width: 117px;
+    padding: 20px;
+}
 
 // flexing the gallery section 
+
 .gallery ul {
     display: flex;
     justify-content: space-between;
@@ -194,18 +374,81 @@ ul {
     
     }
 
-    .gallery ul li {
+.gallery ul li {
         width: calc((100% / 5) - 20px);
+        display: flex;
+        flex-wrap: wrap;
     } 
 
 
     // flexing the name product with shop cart icon inside each li of gallery 
 
-
-
-    .gallery .product-name {
+.gallery .product-name {
         display: flex;
         }
+
+
+        // i have to style icons and h3 later
+
+h3 {
+
+}
+
+
+
+
+// section discounts
+
+
+
+// I flex the images with their texts
+
+
+.sofa-discounts .sale-brown-sofa, 
+.sofa-discounts .sale-white-sofa  {
+    display: flex;
+
+}
+
+
+.img-30-off, .img-50-off{
+    posItion:relative 
+}
+
+.text-30-off, .text-50-off {
+    position: absolute;
+}
+
+// I flex the whole div that contain the images and text on it 
+
+
+/* Inline #5 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+
+.big-sale {
+}
+
+.big-sale {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+
+.img-30-off, .img-50-off {
+  width: 80%;
+}
+
+.sofa-discounts .sale-brown-sofa, .sofa-discounts .sale-white-sofa {
+  justify-content: space-evenly;
+}
+
+ 
+
+
+
+
+    
   
      
 
