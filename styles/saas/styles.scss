@@ -290,7 +290,20 @@ header nav ul  {
 //     margin-bottom: 20px;
 //   }
   
+// section instagram
 
+
+
+
+.instagram ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .instagram ul li {
+    width: calc(100% / 5 - 20px );
+  }
+  
 
 
 

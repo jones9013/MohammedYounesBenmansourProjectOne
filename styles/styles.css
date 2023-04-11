@@ -341,6 +341,15 @@ h1 {
   font-size: 15px;
 }
 
+.instagram ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instagram ul li {
+  width: calc(20% - 20px);
+}
+
 .gallery {
   height: 120vh;
 }
