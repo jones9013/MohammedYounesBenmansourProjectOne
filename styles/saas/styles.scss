@@ -368,25 +368,30 @@ h2,
     text-align: center;
 }
 
-// adding padding, it was too close the gallery images
+// styling the h2
+ h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+// adding padding, it was too close tothe gallery images
 
 .gallery .button-gallery {
     padding-top: 50px;
 }
 
 
-.gallery .button-gallery button {
-    width: 117px;
-    padding: 20px;
-}
-
 // flexing the gallery section 
 
 .gallery ul {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     flex-wrap: wrap;
     width: 100%;
+    height: auto ;
     
     }
 
@@ -394,6 +399,7 @@ h2,
         width: calc((100% / 5) - 20px);
         display: flex;
         flex-wrap: wrap;
+        padding: 12px;
     } 
 
 
@@ -401,16 +407,129 @@ h2,
 
 .gallery .product-name {
         display: flex;
+        justify-content: space-between;
         }
 
 
         // i have to style icons and h3 later
 
-h3 {
 
+/* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+
+// .product-name {
+// }
+
+// h3 {
+//   font-size: 12px;
+// }
+
+// .fa-solid.fa-cart-shopping {
+//   border: 1px inset #80808052;
+//   height: 27px;
+//   width: 32px;
+// }
+
+// /* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+
+// .gallery .product-name {
+//   justify-content: space-between;
+// }
+
+// /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+
+// section.wrapper:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1) > div:nth-child(1) > div:nth-child(2) > i:nth-child(2) {
+//   margin-top: 0px;
+//   padding-top: 3px;
+//   border-bottom-width: 0.8px;
+//   border-bottom-style: solid;
+//   padding-bottom: 0px;
+//   padding-left: 3px;
+// }
+
+// styling the h3
+
+.gallery h3 {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 
+
+// adding border to the icon
+
+.gallery a .fa-solid.fa-cart-shopping {
+  border: 1px inset #80808052;
+  height: 27px;
+  width: 32px;
+  margin-top: 0px;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+
+
+
+.inside-gallery {
+    position: relative;
+  }
+  
+  .promo-sale,
+  .promo-new {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    border: 2px solid transparent;
+    width: 69px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+  }
+
+//   adding background color for each promo box 
+.promo-sale {
+    background-color: #eba6aa;
+}
+
+.promo-new {
+    background-color: #88cce2;
+}
+
+// I add line through for the the orginal price of the first child
+
+.gallery a .inside-gallery .price-before {
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+// styling tge button
+
+.gallery .button-gallery button {
+    width: 117px;
+    padding: 13px;
+    background-color: white;
+    line-height: 1.2;
+}
+
+// Styling the the anchor with border 
+
+
+/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+
+.gallery ul li a {
+    border: 1px solid #66666612;
+  }
+  
+ 
+  /* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+
+  
+
+
+  
 
 
 // section discounts

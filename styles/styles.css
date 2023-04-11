@@ -359,32 +359,97 @@ h2,
   text-align: center;
 }
 
-.gallery .button-gallery {
-  padding-top: 50px;
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
-.gallery .button-gallery button {
-  width: 117px;
-  padding: 20px;
+.gallery .button-gallery {
+  padding-top: 50px;
 }
 
 .gallery ul {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   flex-wrap: wrap;
   width: 100%;
+  height: auto;
 }
 
 .gallery ul li {
   width: calc(20% - 20px);
   display: flex;
   flex-wrap: wrap;
+  padding: 12px;
 }
 
 .gallery .product-name {
   display: flex;
+  justify-content: space-between;
 }
 
+/* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+.gallery h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.gallery a .fa-solid.fa-cart-shopping {
+  border: 1px inset rgba(128, 128, 128, 0.3215686275);
+  height: 27px;
+  width: 32px;
+  margin-top: 0px;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.inside-gallery {
+  position: relative;
+}
+
+.promo-sale,
+.promo-new {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  border: 2px solid transparent;
+  width: 69px;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+.promo-sale {
+  background-color: #eba6aa;
+}
+
+.promo-new {
+  background-color: #88cce2;
+}
+
+.gallery a .inside-gallery .price-before {
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.gallery .button-gallery button {
+  width: 117px;
+  padding: 13px;
+  background-color: white;
+  line-height: 1.2;
+}
+
+/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+.gallery ul li a {
+  border: 1px solid rgba(102, 102, 102, 0.0705882353);
+}
+
+/* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
 .sofa-discounts .sale-brown-sofa,
 .sofa-discounts .sale-white-sofa {
   display: flex;
