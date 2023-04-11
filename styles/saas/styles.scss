@@ -558,11 +558,116 @@ h2,
     posItion:relative 
 }
 
-.text-30-off, .text-50-off {
+
+// adding the white border to the Brown-sofa
+
+.big-sale .sale-brown-sofa .text-30-off  {
     position: absolute;
-    top:50%
+    top: 10px;
+    display: flex;
+    // height: 100%;
+   
 
 }
+
+  .percentage-big-size {
+    font-weight: bold;
+    font-size: 57px;
+  }
+ .big-sale .sale-brown-sofa .text-30-off  p {
+    color: white;
+    border: 2px solid white;
+    height: 24%;
+    font-size: 28px;
+    max-width: calc(100% - 20px);
+    text-align: center;
+  }
+  
+//   .percentage-big-size {
+//     font-weight: bold;
+//     font-size: 57px;
+//   }
+  
+// adding the white border to the white sofa
+
+
+
+
+
+
+
+
+ .text-50-off {
+    position: absolute;
+    top:50%;
+    text-align: center;
+        color: white;
+
+}
+.text-50-off a {
+    color: white;
+} 
+// styling the sale up to 
+  
+.sale-white-sofa .text-50-off .inside-white {
+    background-color: white;
+    color: wheat;
+    font-size: 13px;
+    border: 2px solid transparent;
+    width: 113px;
+    margin: 0 auto;
+    height: 28px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+
+
+
+// styling the white sofa 
+
+
+/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+
+// .text-50-off {
+//     text-align: center;
+//     color: white;
+//   }
+  
+//   /* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+//   a {
+//     color: white;
+//   }
+  
+//   .inside-white {
+//     background-color: white;
+//     color: wheat;
+//     font-size: 13px;
+//     border: 2px solid transparent;
+//     width: 113px;
+//     display: ;
+//     margin: 0 auto;
+//     height: 28px;
+//   }
+  
+  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+//   .inside-white {
+//     /* padding-bottom: 20px; */
+//     padding-top: 3px;
+//     padding-bottom: 3px;
+//   }
+  
+
+
+
+
+
+
+
+
+
 
 // I flex the whole div that contain the images and text on it 
 
@@ -583,6 +688,31 @@ h2,
 //  I need to stylestexts inside images ???????????????????????????????????????????????????/
  
 
+/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+
+// .text-30-off, .text-50-off {
+//     /* top: 50%; */
+//     top: 10px;
+//     height: 100%;
+//     text-align: center;
+//     display: flex;
+//   }
+  
+//   /* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+//   p {
+//     color: white;
+//     border: 2px solid white;
+//     height: 24%;
+//     font-size: 28px;
+//     max-width: calc(100% - 20px);
+//   }
+  
+//   .percentage-big-size {
+//     font-weight: bold;
+//     font-size: 57px;
+//   }
+  
 
 
 
