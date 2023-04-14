@@ -33,6 +33,7 @@ a {
 ul,
 h1,
 h3,
+h4,
  {
     
     margin: 0;
@@ -232,7 +233,8 @@ header nav ul  {
 // i set the height for the section of blog
 
 #blog {
-        height: 100vh;
+        // height: 100vh;
+        height: auto;
     }
 
 
@@ -290,23 +292,6 @@ header nav ul  {
 //     margin-bottom: 20px;
 //   }
   
-// section instagram
-
-
-
-
-.instagram ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .instagram ul li {
-    width: calc(100% / 5 - 20px );
-  }
-  
-
-
-
 
 
 
@@ -358,7 +343,9 @@ header nav ul  {
 
 
 .gallery {
-    height: 120vh;
+    // height: 120vh;
+
+    height: auto;
 }
 
 
@@ -716,7 +703,145 @@ h2,
 
 
 
-    
+    // section instagram
+
+
+
+
+.instagram ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .instagram ul li {
+    width: calc(100% / 5 - 20px );
+  }
+  
+
+
+
+//  keeping for the last time ...........................
+
+/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+
+// #blog {
+//     background-color: red;
+//   }
+  
+  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+//   #blog {
+//     margin-top: 20px;
+//   }
+  
+  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+//   section.wrapper:nth-child(2) {
+//     padding-top: 20px;
+//     margin-top: 20px;
+//   }
+  
+  /* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+//   .wrapper.gallery {
+//     background-color: yellow;
+//   }
+  
+//   .sofa-discounts.wrapper {
+//     background-color: green;
+//   }
+  
+  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+//   .sofa-discounts {
+//     margin-top: 20px;
+//     padding-top: 20px;
+//   }
+  
+
+
+// styling footer section 
+
+footer {
+    background-color: #666;
+    color:white;
+}
+
+
+
+
+
+footer .wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .row-footer {
+    width: calc(100% / 4 - 20px - 20px);
+  }
+  
+
+
+// flexing the icons of the firt footers' row
+
+footer .icons-footer {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+
+footer .icons-footer .fa-facebook {
+    margin-right: 20px;
+  }
+  
+  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+footer .icons-footer  .fa-twitter {
+    margin-right: 20px;
+  }
+
+
+
+/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+
+// div.row-footer:nth-child(1) > p:nth-child(2) {
+//     margin-top: 0px;
+//     margin-bottom: 0px;
+//   }
+  
+  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+footer .wrapper {
+    padding-top: 40px;
+  }
+  
+  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+  div.row-footer:nth-child(1) > h4:nth-child(1) {
+    /* padding-top: 2px; */
+    margin-bottom: 20px;
+  }
+  
+  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+  div.row-footer:nth-child(2) > h4:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  
+  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+  div.row-footer:nth-child(3) > h4:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  
+  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+  div.row-footer:nth-child(4) > h4:nth-child(1) {
+    margin-bottom: 20px;
+  }
+  
+  
   
      
 

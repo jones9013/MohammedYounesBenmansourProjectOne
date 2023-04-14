@@ -248,7 +248,8 @@ a {
 
 ul,
 h1,
-h3 {
+h3,
+h4 {
   margin: 0;
   padding: 0;
 }
@@ -305,7 +306,7 @@ h1 {
 }
 /* Inline #1 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
 #blog {
-  height: 100vh;
+  height: auto;
 }
 
 #blog ul {
@@ -341,17 +342,8 @@ h1 {
   font-size: 15px;
 }
 
-.instagram ul {
-  display: flex;
-  justify-content: space-between;
-}
-
-.instagram ul li {
-  width: calc(20% - 20px);
-}
-
 .gallery {
-  height: 120vh;
+  height: auto;
 }
 
 h2,
@@ -521,3 +513,72 @@ h2 {
 }
 
 /* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+.instagram ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.instagram ul li {
+  width: calc(20% - 20px);
+}
+
+/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+/* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+footer {
+  background-color: #666;
+  color: white;
+}
+
+footer .wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.row-footer {
+  width: calc(25% - 20px - 20px);
+}
+
+footer .icons-footer {
+  display: flex;
+  justify-content: flex-start;
+}
+
+footer .icons-footer .fa-facebook {
+  margin-right: 20px;
+}
+
+/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+footer .icons-footer .fa-twitter {
+  margin-right: 20px;
+}
+
+/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+footer .wrapper {
+  padding-top: 40px;
+}
+
+/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+div.row-footer:nth-child(1) > h4:nth-child(1) {
+  /* padding-top: 2px; */
+  margin-bottom: 20px;
+}
+
+/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+div.row-footer:nth-child(2) > h4:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+div.row-footer:nth-child(3) > h4:nth-child(1) {
+  margin-bottom: 20px;
+}
+
+/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+div.row-footer:nth-child(4) > h4:nth-child(1) {
+  margin-bottom: 20px;
+}
