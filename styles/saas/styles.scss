@@ -49,15 +49,39 @@ img {
 
 // header
 
-// flexing to top of the header 
+// flexing to top of the header ( logos img + nav + icon ) 
+
 header .top-header {
     display: flex;
     justify-content: space-between;
     height: 14vh;
     align-items: center;
-  }
+    padding: 20px;
+   
+}
 
-//   flexing the nav
+
+header .top-header a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    
+}
+
+// Adding hover to the nav bar
+
+header .top-header a:hover {
+    color: pink;
+    box-shadow: 0px 0px 10px 0px;
+    border: 2px solid red;
+    
+
+}
+
+
+//   flexing the nav for menu 
+
 header nav ul  {
     display: flex;
     justify-content: space-between;
@@ -65,49 +89,20 @@ header nav ul  {
     
 }
 
+// styling the h1 and 
 
-
-
-
-// // making position ( relative and absolute ) for making the h1 and content over the home image 
-
-    // first i set the image to relative
-
-// header .home-header {                 
-//     position: relative;
-//     text-align: left;
-//     height: 100%;
-//     background-color: yellow;
-// }
-
-// i set the height and width for both ( container and image )
-// .img-home-container {
-//     height: 100%;
-//     background-color: red;
-// }
-
-
-
-//  Positionning the text over the image 
-// .home-content {
-//     width: 20%;
-//     height: 100%;
-//     position: absolute;
-//     top: 20%;
-//     left: 20%;
-
-//     }
-
-    h1{
-        font-size: 2.5em;
+ h1{
+        font-size: 40px;
+        line-height: 1.2;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
         line-height: 1.2;
     }
 
 
-/* Inline #5 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
 
-.home-header {
-}
+    // styling the second part of the header 
+
 
 .home-header {
   display: flex;
@@ -121,8 +116,16 @@ header nav ul  {
 .home-content {
   width: 20%;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 20%;
+}
+
+.home-header p {
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
 }
 
 
@@ -138,109 +141,23 @@ header nav ul  {
                 font-size: 15px;
               }
 
-            //   section for categories i will put the class categories 
-
-            // .categories {
-            //     display: none;
-            // }
-        
-
+           
 
         }
 
 
 
-// section 2 
+// -----------------------------------------------Section 2 blog------------------------------------------------------------------ 
 
-// #blog {
-//     height: 100vh;
-// }
-
-// First i flex the three images 
-
-// #blog ul {
-//     display: flex;
-//     width: 100%;
-//     height: 100%;
-//     justify-content: space-between;
-//     align-items: center;
-//   }
-  
-// #blog img {
-//     width: 100%;
-//   }
-  
-// #blog ul li {
-//     width: calc(33% - 20px);
-//   }
-
-
-// to make all of them in different lines
-
-// #blog > ul:nth-child(1) > li:nth-child(1) {
-//     margin-top: 20px;
-//   }
-
-//   #blog > ul:nth-child(1) > li:nth-child(3) {
-//     margin-top: 20px;
-//   }
-
-//   #blog > ul:nth-child(1) > li:nth-child(2) {
-//     margin-bottom: 20px;
-//   }
-  
-
-// making positions relative and absolute 
-
-/* Inline #1 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-
-// ul {
-//     position: relative;
-    
-//   }
-  
-//   .categories {
-//     position: absolute;
-//     top: 70%;
-//     background-color: white;
-//     width: 120px;
-//     text-align: center;
-//     font-size: 15px;
-//   }
-  
-// trying the new update 
-
-// #blog .img-plants img {
-//         width: calc(33% - 20px);
-//       }
-    
-// .images-blog {
-//     display: flex;
-// }
-
-// .img-plants {
-//     position: relative;
-// }
-
-
-// .categories {
-//     position: absolute;
-// }
-
-
-// trying the second new update
-
-// i set the height for the section of blog
-
-#blog {
-        // height: 100vh;
+.blog {
         height: auto;
+        padding:40px 0px 40px 0px;
     }
 
 
-//  i flex the images
+//   Flexing the 3 images
 
-#blog ul {
+     .blog ul {
         display: flex;
         width: 100%;
         height: 100%;
@@ -249,48 +166,44 @@ header nav ul  {
       }
     
 
-.img-cetegories img {
+     .img-categories img {
             width: 100%;
             height: auto;
           }
-//    I flex the li inside ( image + text ) to make them responsive and I set position relative 
-#blog ul li {
+//     flexing the li inside ( image + text ) to make them responsive and I set position relative 
+     .blog ul li {
             width: calc(33% - 20px);
             display: flex;
             position: relative;   
           }
 
-          .img-cetegories {
+     .blog ul li .img-categories {
             position: relative;
             height: auto;
     
   }
 
-//   I positionne the text absolute to make it over the image
+//    positioning the text absolute to make it over the image
   
-  .text-categories {
+     .blog ul li .link-categories {
     position: absolute;
     top: 85%;
     background-color: white;
     width: 120px;
     text-align: center;
     font-size: 15px;
+    height: 37px;
+    padding-top: 10px;
   }
 
-  
-// to make all of them in different lines
+//   hover the link categories 
 
-// #blog > ul:nth-child(1) > li:nth-child(1) {
-//     margin-top: 20px;
-//   }
+     .blog ul li .link-categories a:hover {
+    text-decoration: underline;
+    color:#bfb60d;
+    transition: 0.3s;
+    } 
 
-//   #blog > ul:nth-child(1) > li:nth-child(3) {
-//     margin-top: 20px;
-//   }
-
-//   #blog > ul:nth-child(1) > li:nth-child(2) {
-//     margin-bottom: 20px;
-//   }
   
 
 
@@ -313,9 +226,6 @@ header nav ul  {
 
 
 
-// The class of gallery 
-
-// adding the height for the whole section
 
 
 
@@ -335,18 +245,17 @@ header nav ul  {
 
 
 
-// section gallery 
 
-
-// I nned to syyle the font size inside anchor tag and add two boxes of sale as position absolute ????????????????????????????????????????????????????????????????
+// ------------------------------------------------Section's gallery------------------------------------------------------------------------
 
 
 
 .gallery {
-    // height: 120vh;
 
     height: auto;
-}
+    padding-top: 20px;
+    padding-bottom: 40px;
+       }
 
 
 // center the h2 and the button
@@ -392,46 +301,12 @@ h2,
 
     // flexing the name product with shop cart icon inside each li of gallery 
 
-.gallery .product-name {
+.gallery .inside-gallery .product-name {
         display: flex;
         justify-content: space-between;
         }
 
-
-        // i have to style icons and h3 later
-
-
-/* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-
-// .product-name {
-// }
-
-// h3 {
-//   font-size: 12px;
-// }
-
-// .fa-solid.fa-cart-shopping {
-//   border: 1px inset #80808052;
-//   height: 27px;
-//   width: 32px;
-// }
-
-// /* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
-
-// .gallery .product-name {
-//   justify-content: space-between;
-// }
-
-// /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-
-// section.wrapper:nth-child(2) > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1) > div:nth-child(1) > div:nth-child(2) > i:nth-child(2) {
-//   margin-top: 0px;
-//   padding-top: 3px;
-//   border-bottom-width: 0.8px;
-//   border-bottom-style: solid;
-//   padding-bottom: 0px;
-//   padding-left: 3px;
-// }
+       
 
 // styling the h3
 
@@ -445,7 +320,7 @@ h2,
 
 
 
-// adding border to the icon
+// Adding border to the icon
 
 .gallery a .fa-solid.fa-cart-shopping {
   border: 1px inset #80808052;
@@ -456,8 +331,15 @@ h2,
   padding-left: 3px;
 }
 
+// Styling the the anchor with border 
+
+.gallery ul li a {
+    border: 1px solid #66666612;
+  }
+  
 
 
+// Positioning the two promo boxes over their images
 
 .inside-gallery {
     position: relative;
@@ -466,8 +348,8 @@ h2,
   .promo-sale,
   .promo-new {
     position: absolute;
-    top: 8px;
-    left: 16px;
+    top: 0px;
+    left: 0px;
     border: 2px solid transparent;
     width: 69px;
     text-align: center;
@@ -491,7 +373,13 @@ h2,
     margin-right: 10px;
 }
 
-// styling tge button
+// hovering the anchor tags of the images
+.gallery ul li a:hover {
+   transform: scale(1.2);
+   transition: 0.3s;
+}
+
+// styling the button
 
 .gallery .button-gallery button {
     width: 117px;
@@ -500,27 +388,20 @@ h2,
     line-height: 1.2;
 }
 
-// Styling the the anchor with border 
 
 
-/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+// ----------------------------------------------------------section discounts---------------------------------------------------------------
 
-.gallery ul li a {
-    border: 1px solid #66666612;
-  }
-  
- 
-  /* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-
-  
+.sofa-discounts {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 
-  
-
-
-// section discounts
-
+.sofa-discounts .big-sale {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
 
 // I flex the images with their texts
@@ -536,12 +417,13 @@ h2,
 
 // I set the position relative ti put the text relative the image
 
-.sale-brown-sofa,
-.sale-white-sofa{
+.sofa-discounts .big-sale .sale-brown-sofa,
+.sofa-discounts .big-sale .sale-white-sofa{
     position: relative;
 }
 
-.img-30-off, .img-50-off{
+.sofa-discounts .big-sale .img-30-off,
+.sofa-discounts .big-sale  .img-50-off{
     posItion:relative 
 }
 
@@ -557,7 +439,7 @@ h2,
 
 }
 
-  .percentage-big-size {
+.big-sale .text-30-off .percentage-big-size {
     font-weight: bold;
     font-size: 57px;
   }
@@ -570,12 +452,6 @@ h2,
     text-align: center;
   }
   
-//   .percentage-big-size {
-//     font-weight: bold;
-//     font-size: 57px;
-//   }
-  
-// adding the white border to the white sofa
 
 
 
@@ -584,24 +460,33 @@ h2,
 
 
 
- .text-50-off {
+.big-sale .sale-white-sofa .text-50-off {
     position: absolute;
     top:50%;
     text-align: center;
-        color: white;
+    color: white;
 
 }
+// making the span big size 
+
+
+.big-sale .sale-white-sofa .text-50-off .percentage-big-size {
+    font-size: 51px;
+    font-weight: bold;
+  }
+  
 .text-50-off a {
     color: white;
 } 
 // styling the sale up to 
   
 .sale-white-sofa .text-50-off .inside-white {
+    display: inline-block;
     background-color: white;
     color: wheat;
-    font-size: 13px;
+    font-size: 12px;
     border: 2px solid transparent;
-    width: 113px;
+    width: 120px;
     margin: 0 auto;
     height: 28px;
     padding-top: 3px;
@@ -610,56 +495,8 @@ h2,
 
 
 
+// flexing the 2 images 
 
-// styling the white sofa 
-
-
-/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
-
-// .text-50-off {
-//     text-align: center;
-//     color: white;
-//   }
-  
-//   /* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-//   a {
-//     color: white;
-//   }
-  
-//   .inside-white {
-//     background-color: white;
-//     color: wheat;
-//     font-size: 13px;
-//     border: 2px solid transparent;
-//     width: 113px;
-//     display: ;
-//     margin: 0 auto;
-//     height: 28px;
-//   }
-  
-  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-//   .inside-white {
-//     /* padding-bottom: 20px; */
-//     padding-top: 3px;
-//     padding-bottom: 3px;
-//   }
-  
-
-
-
-
-
-
-
-
-
-
-// I flex the whole div that contain the images and text on it 
-
-.big-sale {
-}
 
 .big-sale {
   display: flex;
@@ -672,40 +509,17 @@ h2,
   width: 80%;
 }
 
-//  I need to stylestexts inside images ???????????????????????????????????????????????????/
- 
-
-/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
-
-// .text-30-off, .text-50-off {
-//     /* top: 50%; */
-//     top: 10px;
-//     height: 100%;
-//     text-align: center;
-//     display: flex;
-//   }
-  
-//   /* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-//   p {
-//     color: white;
-//     border: 2px solid white;
-//     height: 24%;
-//     font-size: 28px;
-//     max-width: calc(100% - 20px);
-//   }
-  
-//   .percentage-big-size {
-//     font-weight: bold;
-//     font-size: 57px;
-//   }
-  
 
 
 
-    // section instagram
+    //-------------------------------------------------------- section instagram-------------------------------------------------------------
 
 
+
+.instagram { 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 
 .instagram ul {
@@ -719,51 +533,11 @@ h2,
   
 
 
-
-//  keeping for the last time ...........................
-
-/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
-
-// #blog {
-//     background-color: red;
-//   }
-  
-  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-//   #blog {
-//     margin-top: 20px;
-//   }
-  
-  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-//   section.wrapper:nth-child(2) {
-//     padding-top: 20px;
-//     margin-top: 20px;
-//   }
-  
-  /* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-//   .wrapper.gallery {
-//     background-color: yellow;
-//   }
-  
-//   .sofa-discounts.wrapper {
-//     background-color: green;
-//   }
-  
-  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-//   .sofa-discounts {
-//     margin-top: 20px;
-//     padding-top: 20px;
-//   }
-  
-
-
-// styling footer section 
+// -------------------------------------------Footer------------------------------------------------
 
 footer {
-    background-color: #666;
+    background-color: #333;
+    margin-top: 40px;
     color:white;
 }
 
@@ -775,9 +549,10 @@ footer .wrapper {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    padding-top: 40px;
   }
   
-  .row-footer {
+ footer .wrapper .row-footer {
     width: calc(100% / 4 - 20px - 20px);
   }
   
@@ -785,63 +560,45 @@ footer .wrapper {
 
 // flexing the icons of the firt footers' row
 
-footer .icons-footer {
+footer .row-footer .icons-footer {
     display: flex;
     justify-content: flex-start;
   }
+
+//   adding margin between two icons
   
 
-footer .icons-footer .fa-facebook {
+footer .icons-footer .fa-facebook,
+footer .icons-footer  .fa-twitter
+ {
     margin-right: 20px;
   }
+
+//   Adding margin betwwen h4 and anchor and p
+.row-footer h4 {
+    margin-bottom: 20px;
+}
   
-  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-footer .icons-footer  .fa-twitter {
-    margin-right: 20px;
-  }
+// styling p and anchor 
+footer p {
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
 
 
+footer a {
+    color: white;
+    font-size: 12px;
+}
 
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+// adding margin between icons and anchor to make liitle bit of space 
 
-// div.row-footer:nth-child(1) > p:nth-child(2) {
-//     margin-top: 0px;
-//     margin-bottom: 0px;
-//   }
-  
-  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-footer .wrapper {
-    padding-top: 40px;
-  }
-  
-  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-  div.row-footer:nth-child(1) > h4:nth-child(1) {
-    /* padding-top: 2px; */
-    margin-bottom: 20px;
-  }
-  
-  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-  div.row-footer:nth-child(2) > h4:nth-child(1) {
-    margin-bottom: 20px;
-  }
-  
-  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-  div.row-footer:nth-child(3) > h4:nth-child(1) {
-    margin-bottom: 20px;
-  }
-  
-  /* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-  
-  div.row-footer:nth-child(4) > h4:nth-child(1) {
-    margin-bottom: 20px;
-  }
-  
-  
+footer .row-footer ul li i {
+    margin-right: 5px;
+}
   
      
 

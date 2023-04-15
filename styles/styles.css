@@ -264,6 +264,20 @@ header .top-header {
   justify-content: space-between;
   height: 14vh;
   align-items: center;
+  padding: 20px;
+}
+
+header .top-header a {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+header .top-header a:hover {
+  color: pink;
+  box-shadow: 0px 0px 10px 0px;
+  border: 2px solid red;
 }
 
 header nav ul {
@@ -273,11 +287,13 @@ header nav ul {
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 40px;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
   line-height: 1.2;
 }
 
-/* Inline #5 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
 .home-header {
   display: flex;
   flex-direction: column;
@@ -290,8 +306,16 @@ h1 {
 .home-content {
   width: 20%;
   position: absolute;
-  top: 50%;
+  top: 35%;
   left: 20%;
+}
+
+.home-header p {
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
 @media (max-width: 1100px) {
@@ -304,12 +328,12 @@ h1 {
     font-size: 15px;
   }
 }
-/* Inline #1 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-#blog {
+.blog {
   height: auto;
+  padding: 40px 0px 40px 0px;
 }
 
-#blog ul {
+.blog ul {
   display: flex;
   width: 100%;
   height: 100%;
@@ -317,33 +341,43 @@ h1 {
   align-items: center;
 }
 
-.img-cetegories img {
+.img-categories img {
   width: 100%;
   height: auto;
 }
 
-#blog ul li {
+.blog ul li {
   width: calc(33% - 20px);
   display: flex;
   position: relative;
 }
 
-.img-cetegories {
+.blog ul li .img-categories {
   position: relative;
   height: auto;
 }
 
-.text-categories {
+.blog ul li .link-categories {
   position: absolute;
   top: 85%;
   background-color: white;
   width: 120px;
   text-align: center;
   font-size: 15px;
+  height: 37px;
+  padding-top: 10px;
+}
+
+.blog ul li .link-categories a:hover {
+  text-decoration: underline;
+  color: #bfb60d;
+  transition: 0.3s;
 }
 
 .gallery {
   height: auto;
+  padding-top: 20px;
+  padding-bottom: 40px;
 }
 
 h2,
@@ -378,12 +412,11 @@ h2 {
   padding: 12px;
 }
 
-.gallery .product-name {
+.gallery .inside-gallery .product-name {
   display: flex;
   justify-content: space-between;
 }
 
-/* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
 .gallery h3 {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -400,6 +433,10 @@ h2 {
   padding-left: 3px;
 }
 
+.gallery ul li a {
+  border: 1px solid rgba(102, 102, 102, 0.0705882353);
+}
+
 .inside-gallery {
   position: relative;
 }
@@ -407,8 +444,8 @@ h2 {
 .promo-sale,
 .promo-new {
   position: absolute;
-  top: 8px;
-  left: 16px;
+  top: 0px;
+  left: 0px;
   border: 2px solid transparent;
   width: 69px;
   text-align: center;
@@ -429,6 +466,11 @@ h2 {
   margin-right: 10px;
 }
 
+.gallery ul li a:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
 .gallery .button-gallery button {
   width: 117px;
   padding: 13px;
@@ -436,24 +478,29 @@ h2 {
   line-height: 1.2;
 }
 
-/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
-.gallery ul li a {
-  border: 1px solid rgba(102, 102, 102, 0.0705882353);
+.sofa-discounts {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-/* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+.sofa-discounts .big-sale {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 .sofa-discounts .sale-brown-sofa,
 .sofa-discounts .sale-white-sofa {
   display: flex;
   justify-content: space-evenly;
 }
 
-.sale-brown-sofa,
-.sale-white-sofa {
+.sofa-discounts .big-sale .sale-brown-sofa,
+.sofa-discounts .big-sale .sale-white-sofa {
   position: relative;
 }
 
-.img-30-off, .img-50-off {
+.sofa-discounts .big-sale .img-30-off,
+.sofa-discounts .big-sale .img-50-off {
   posItion: relative;
 }
 
@@ -463,7 +510,7 @@ h2 {
   display: flex;
 }
 
-.percentage-big-size {
+.big-sale .text-30-off .percentage-big-size {
   font-weight: bold;
   font-size: 57px;
 }
@@ -477,11 +524,16 @@ h2 {
   text-align: center;
 }
 
-.text-50-off {
+.big-sale .sale-white-sofa .text-50-off {
   position: absolute;
   top: 50%;
   text-align: center;
   color: white;
+}
+
+.big-sale .sale-white-sofa .text-50-off .percentage-big-size {
+  font-size: 51px;
+  font-weight: bold;
 }
 
 .text-50-off a {
@@ -489,19 +541,18 @@ h2 {
 }
 
 .sale-white-sofa .text-50-off .inside-white {
+  display: inline-block;
   background-color: white;
   color: wheat;
-  font-size: 13px;
+  font-size: 12px;
   border: 2px solid transparent;
-  width: 113px;
+  width: 120px;
   margin: 0 auto;
   height: 28px;
   padding-top: 3px;
   padding-bottom: 3px;
 }
 
-/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
 .big-sale {
   display: flex;
   flex-direction: row-reverse;
@@ -512,7 +563,11 @@ h2 {
   width: 80%;
 }
 
-/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+.instagram {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .instagram ul {
   display: flex;
   justify-content: space-between;
@@ -522,13 +577,9 @@ h2 {
   width: calc(20% - 20px);
 }
 
-/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-/* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
 footer {
-  background-color: #666;
+  background-color: #333;
+  margin-top: 40px;
   color: white;
 }
 
@@ -536,49 +587,40 @@ footer .wrapper {
   display: flex;
   width: 100%;
   justify-content: space-between;
+  padding-top: 40px;
 }
 
-.row-footer {
+footer .wrapper .row-footer {
   width: calc(25% - 20px - 20px);
 }
 
-footer .icons-footer {
+footer .row-footer .icons-footer {
   display: flex;
   justify-content: flex-start;
 }
 
-footer .icons-footer .fa-facebook {
-  margin-right: 20px;
-}
-
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+footer .icons-footer .fa-facebook,
 footer .icons-footer .fa-twitter {
   margin-right: 20px;
 }
 
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-footer .wrapper {
-  padding-top: 40px;
-}
-
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-div.row-footer:nth-child(1) > h4:nth-child(1) {
-  /* padding-top: 2px; */
+.row-footer h4 {
   margin-bottom: 20px;
 }
 
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-div.row-footer:nth-child(2) > h4:nth-child(1) {
-  margin-bottom: 20px;
+footer p {
+  font-size: 12px;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
 }
 
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-div.row-footer:nth-child(3) > h4:nth-child(1) {
-  margin-bottom: 20px;
+footer a {
+  color: white;
+  font-size: 12px;
 }
 
-/* Element | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
-div.row-footer:nth-child(4) > h4:nth-child(1) {
-  margin-bottom: 20px;
+footer .row-footer ul li i {
+  margin-right: 5px;
 }
