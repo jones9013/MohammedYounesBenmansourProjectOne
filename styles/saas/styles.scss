@@ -33,7 +33,7 @@ a {
 ul,
 h1,
 h3,
-h4,
+h4
  {
     
     margin: 0;
@@ -129,22 +129,274 @@ header nav ul  {
 }
 
 
+.hamburger-menu {
+    display: none;
+}
+
+
     // mediaqerry to make the text over the image responsive
 
-    @media(max-width: 1100px) {
+    @media (max-width: 1100px) {
+
+        // header section
         .home-content {
                 width: 50%;
                 height: 100%;
                 position: absolute;
-                top: 0%;
-                left: 0%;
+                top: 20%;
+                left:0%;
                 font-size: 15px;
               }
 
+
+            header .top-header {
+                display: none;
+            }
+
+            // mobile version
+            
+            .hamburger-menu {
+                display: block;
+            }
+
+
+            .hamburger-menu .drop-down ul  {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 100%;
+            }
+
+            header {
+                position: relative;
+            }
+
+            .nav-bar {
+                position: absolute;
+                left: 90%;
+                top: 0%;
+                }
+
+            .hamburger-menu .drop-down {
+                position: absolute;
+                top: 0%;
+                left: 0%;
+                background-color:rgba(235, 219, 103, 0.3);
+                padding: 20px;
+                width: 100%;
+                height: 100%;
+            }
+
+            .hamburger-menu .drop-down ul {
+                width: 100%;
+            }
+
+            
+
+            .drop-down {
+                display: none;
+                
+            }
+
+            .hamburger-menu:focus-within .drop-down {
+                display: block;
+                padding-left: 0px;
+                padding-right: 0px;
+                
+            }
+
+            // .hamburger-menu:focus-within  {
+            //     display: block;
+            // }
+
+            // making hover
+
+            .hamburger-menu .drop-down li:hover {
+               
+                align-items: center;
+                background-color: #DEFA75;
+                width: 100% !important;
+                display: flex;
+                height: 27px;
+                align-items: center;
+                justify-content: center;
+                }
+
+            // styling the anchor
+            .hamburger-menu .drop-down li a {
+                font-size: 13px;
+                font-style: normal;
+                font-weight: bold;
+                color: rgba(155, 191, 240, 1.2);
+              }
+            
+
+
+
+            // hiding p from the header
+            .home-header p {
+                display: none;
+            }
+
+            .home-header .title-container h1 {
+                display: none;
+            }
+
+
+            // -------------------------------------------------making the blog section ------------------------------------------------
+
+            .blog ul li .link-categories {
+               
+                width: 88px;
+                }
+            .blog ul li .link-categories   a {
+                font-size: 12px;
+                padding-right: 30px;
+                }
+
+                // -------------------------------------------------gallery section--------------------------------------------------------
+
+                .gallery ul {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-end;
+                    flex-wrap: wrap;
+                    width: 100%;
+                    height: auto;
+                  }
+            
+                .gallery ul li {
+                    width: calc( 50% - 10px) !important;
+                    // display: flex;
+                    
+                }
+
+// --------------------------------------------------Discount section----------------------------------------------------------------------
+                    .sofa-discounts .big-sale {
+                        
+                        flex-direction: column !important;
+                        
+                    }
+
+
+                    /* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+
+                    // .big-sale .sale-brown-sofa .text-30-off p {
+                    //     /* border: 2px solid white; */
+                    //     /* font-size: 28px; */
+                    //     border: 8px solid white !important;
+                    //     font-size: 14px !important;
+                    //     height: 24% !important;
+                        
+                    //     font-weight: bold;
+                    // }
+                    
+                    // .big-sale .sale-brown-sofa .text-30-off {
+                    //     /* top: 10px; */
+                    //     bottom: 118px ;
+                    //     left: 53px;
+                    // }
+
+
+                    .big-sale .sale-brown-sofa p {
+                        visibility: hidden;
+                      }
+                      .big-sale .sale-brown-sofa p span.percentage-big-size {
+                        visibility: visible;
+                      }
+                      
+  
+
+                    .sofa-discounts .big-sale .sale-white-sofa .img-50-off {
+                        padding-top: 20px;
+                    }
+// ----------------------------------------------footer-----------------------------------------------------------------------------------
+
+
+
+/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+
+// footer .wrapper .row-footer {
+    
+//     // width: 100% !important;
+//   }
+  
+  footer .wrapper {
+    flex-direction: column;
+  }
+
+
+  footer .wrapper .row-footer {
+
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 100% !important;
+
+  }
+
+
+/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+
+.instagram ul {
+    flex-wrap: wrap ;
+    display: flex ;
+  }
+  
+  .instagram ul li {
+    /* width: calc(20% - 20px); */
+  }
+  
+  /* Inline #6 | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/index.html */
+  
+//   li:first-child {
+//     width: 30% !important;
+//   }
+  
+//   li:nth-child(2) {
+//     width: 30% !important;
+//   }
+  
+//   li:nth-child(3) {
+//     width: 30% !important;
+//   }
+  
+//   li:nth-child(4) {
+//     width: 45% !important;
+//     padding-top: 20px;
+//   }
+  
+//   li:nth-child(5) {
+//     width: 45% !important;
+//     padding-top: 20px;
+//   }
+
+
+
+    li:nth-child(-n+3) {
+        width: 30% !important;
+    }
+    
+    li:nth-child(n+4) {
+        width: 45% !important;
+        padding-top: 20px;
+    }
+  
+
+
+
+  
+  
+                    
+                   
+
+
+                    
            
 
         }
 
+    
 
 
 // -----------------------------------------------Section 2 blog------------------------------------------------------------------ 
@@ -439,6 +691,11 @@ h2,
 
 }
 
+.big-sale .sale-brown-sofa .text-30-off > p:nth-child(1) {
+    margin-left: 10px;
+    }
+
+
 .big-sale .text-30-off .percentage-big-size {
     font-weight: bold;
     font-size: 57px;
@@ -600,5 +857,24 @@ footer .row-footer ul li i {
     margin-right: 5px;
 }
   
+
+
+
+// footer nav ul li.hover-footer {
+//     display: none;
+// }
+
+// footer nav ul li:focus-within .hover-footer {
+//     display: block;
+//     height: auto;
+//   }
      
 
+  footer nav ul li .hover-footer {
+    display: none;
+}
+
+footer nav ul li a:focus-within + .hover-footer {
+    display: block;
+    height: auto;
+}
