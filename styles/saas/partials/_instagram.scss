@@ -1,0 +1,19 @@
+
+// ----------------------------------------------instagram section ---------------------------------------------------------------------
+
+
+.instagram { 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.instagram ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .instagram ul li {
+    width: calc(100% / 5 - 20px );
+  }
+  

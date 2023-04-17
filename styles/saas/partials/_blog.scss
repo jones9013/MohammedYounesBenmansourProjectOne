@@ -1,0 +1,88 @@
+.blog {
+    height: auto;
+    padding:40px 0px 40px 0px;
+}
+
+
+//   Flexing the 3 images
+
+ .blog ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+ .blog ul li .img-categories img {
+        width: 100%;
+        height: auto;
+      }
+//     flexing the li inside ( image + text ) to make them responsive and I set position relative 
+ .blog ul li {
+        width: calc(33% - 20px);
+        display: flex;
+        position: relative;   
+      }
+
+ .blog ul li .img-categories {
+        position: relative;
+        height: auto;
+
+}
+
+//    positioning the text absolute to make it over the image
+
+ .blog ul li .link-categories {
+position: absolute;
+top: 85%;
+background-color: white;
+width: 120px;
+text-align: center;
+font-size: 15px;
+height: 37px;
+padding-top: 10px;
+}
+
+//   hover the link categories 
+
+ .blog ul li .link-categories a:hover {
+text-decoration: underline;
+color:#bfb60d;
+transition: 0.3s;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

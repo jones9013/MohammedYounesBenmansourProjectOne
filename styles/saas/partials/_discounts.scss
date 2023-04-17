@@ -1,0 +1,122 @@
+//-------------------------------------discounts section-------------------------------------------------------------------------------
+.sofa-discounts {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+.sofa-discounts .big-sale {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+
+// I flex the images with their texts
+
+
+.sofa-discounts .sale-brown-sofa, 
+.sofa-discounts .sale-white-sofa  {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+// I set the position relative ti put the text relative the image
+
+.sofa-discounts .big-sale .sale-brown-sofa,
+.sofa-discounts .big-sale .sale-white-sofa{
+    position: relative;
+}
+
+.sofa-discounts .big-sale .img-30-off,
+.sofa-discounts .big-sale  .img-50-off{
+    posItion:relative 
+}
+
+
+// adding the white border to the Brown-sofa
+
+.big-sale .sale-brown-sofa .text-30-off  {
+    position: absolute;
+    top: 10px;
+    display: flex;
+    // height: 100%;
+   
+
+}
+
+.big-sale .sale-brown-sofa .text-30-off > p:nth-child(1) {
+    margin-left: 10px;
+    }
+
+
+.big-sale .text-30-off .percentage-big-size {
+    font-weight: bold;
+    font-size: 57px;
+  }
+ .big-sale .sale-brown-sofa .text-30-off  p {
+    color: white;
+    border: 2px solid white;
+    height: 24%;
+    font-size: 28px;
+    max-width: calc(100% - 20px);
+    text-align: center;
+  }
+  
+
+
+
+
+
+
+
+
+.big-sale .sale-white-sofa .text-50-off {
+    position: absolute;
+    top:50%;
+    text-align: center;
+    color: white;
+
+}
+// making the span big size 
+
+
+.big-sale .sale-white-sofa .text-50-off .percentage-big-size {
+    font-size: 51px;
+    font-weight: bold;
+  }
+  
+.text-50-off a {
+    color: white;
+} 
+// styling the sale up to 
+  
+.sale-white-sofa .text-50-off .inside-white {
+    display: inline-block;
+    background-color: white;
+    color: wheat;
+    font-size: 12px;
+    border: 2px solid transparent;
+    width: 120px;
+    margin: 0 auto;
+    height: 28px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+  }
+
+
+
+// flexing the 2 images 
+
+
+.big-sale {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 100%;
+}
+
+
+.img-30-off, .img-50-off {
+  width: 80%;
+}

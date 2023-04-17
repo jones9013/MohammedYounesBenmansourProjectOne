@@ -1,0 +1,141 @@
+// ------------------------------------------------Section's gallery------------------------------------------------------------------------
+
+
+
+.gallery {
+
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 40px;
+       }
+
+
+// center the h2 and the button
+h2,
+.button-gallery {
+    text-align: center;
+}
+
+// styling the h2
+ h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+// adding padding, it was too close tothe gallery images
+
+.gallery .button-gallery {
+    padding-top: 50px;
+}
+
+
+// flexing the gallery section 
+
+.gallery ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto ;
+    
+    }
+
+.gallery ul li {
+        width: calc((100% / 5) - 20px);
+        display: flex;
+        flex-wrap: wrap;
+        padding: 12px;
+    } 
+
+
+    // flexing the name product with shop cart icon inside each li of gallery 
+
+.gallery .inside-gallery .product-name {
+        display: flex;
+        justify-content: space-between;
+        }
+
+       
+
+// styling the h3
+
+.gallery h3 {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+
+
+// Adding border to the icon
+
+.gallery a .fa-solid.fa-cart-shopping {
+  border: 1px inset #80808052;
+  height: 27px;
+  width: 32px;
+  margin-top: 0px;
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+// Styling the the anchor with border 
+
+.gallery ul li a {
+    border: 1px solid #66666612;
+  }
+  
+
+
+// Positioning the two promo boxes over their images
+
+.inside-gallery {
+    position: relative;
+  }
+  
+  .promo-sale,
+  .promo-new {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 2px solid transparent;
+    width: 69px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+  }
+
+//   adding background color for each promo box 
+.promo-sale {
+    background-color: #eba6aa;
+}
+
+.promo-new {
+    background-color: #88cce2;
+}
+
+// I add line through for the the orginal price of the first child
+
+.gallery a .inside-gallery .price-before {
+    text-decoration: line-through;
+    margin-right: 10px;
+}
+
+// hovering the anchor tags of the images
+.gallery ul li a:hover {
+   transform: scale(1.2);
+   transition: 0.3s;
+}
+
+// styling the button
+
+.gallery .button-gallery button {
+    width: 117px;
+    padding: 13px;
+    background-color: white;
+    line-height: 1.2;
+}

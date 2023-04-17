@@ -1,0 +1,86 @@
+// header
+
+// flexing to top of the header ( logos img + nav + icon ) 
+
+header .top-header {
+    display: flex;
+    justify-content: space-between;
+    height: 14vh;
+    align-items: center;
+    padding: 20px;
+   
+}
+
+
+header .top-header a {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+    
+}
+
+// Adding hover to the nav bar
+
+header .top-header a:hover {
+    color: pink;
+    box-shadow: 0px 0px 10px 0px;
+    border: 2px solid red;
+    
+
+}
+
+
+//   flexing the nav for menu 
+
+header nav ul  {
+    display: flex;
+    justify-content: space-between;
+    width: 362px;
+    
+}
+
+// styling the h1 and 
+
+ h1{
+        font-size: 40px;
+        line-height: 1.2;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+
+
+
+    // styling the second part of the header 
+
+
+.home-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-home-container {
+  position: relative;
+}
+
+.home-content {
+  width: 20%;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+}
+
+.home-header p {
+    font-size: 12px;
+    line-height: 1.2;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+.hamburger-menu {
+    display: none;}
+
+
