@@ -769,9 +769,40 @@ footer .row-footer ul li i {
 .contact-main {
   display: flex;
   flex-wrap: wrap;
-  height: 80vh;
+  height: 50vh;
   align-items: center;
 }
+
+/* styling the form for the contact-page */
+
+.contact-main form {
+  display: flex;
+  flex-direction: column;
+  align-items: ;
+  justify-content: space-between;
+  height: 70%;
+  flex-wrap: wrap;
+}
+
+.contact-main form .group-form input, textarea {
+  border:none;
+  border-bottom: 1px solid black;
+}
+
+.contact-main form .group-form button {
+  width: 120px;
+  height: 40px;
+  text-align: center;
+}
+
+/* styling button:hover */
+
+.contact-main form .group-form button:hover {
+  background-color: rgb(140, 14, 249);
+  color: white;
+  border: 2px solid black;
+}
+
 
 
 
