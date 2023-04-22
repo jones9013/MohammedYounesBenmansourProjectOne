@@ -755,3 +755,56 @@ footer nav ul li a:focus-within + .hover-footer {
   display: block;
   height: auto;
 }
+
+
+
+
+/* styling the contact page  */
+
+/* Note: I used the same style for the fotter and navbar of the home page*/
+
+
+
+#contact-page .wrapper .contact-main  {
+
+  display: flex;
+  height: 80vh;
+  align-items: center;
+
+
+}
+#contact-page main .wrapper .contact-main form {
+
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+
+}
+/* making just the border bottom */
+#contact-page main .wrapper .contact-main form .group-form input, textarea {
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+/* styling the buton of the contact page */
+
+#contact-page main .wrapper .contact-main form .group-form button {
+  background-color: white;
+  height: 38px;
+  width: 120px;
+  }
+
+  /* styling the button:hover  */
+
+  #contact-page main .wrapper .contact-main form .group-form button:hover {
+    background-color: rgb(140, 14, 249);
+    color: white;
+    border: 2px solid black;
+  }
+
+
+
+

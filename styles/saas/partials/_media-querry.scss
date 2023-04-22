@@ -1,6 +1,6 @@
 // -----------------------------------------------responsive design ------------------------------------------------------------------------
 
-@media (max-width: 1100px) {
+@media (max-width: 765px) {
 
     // header section
     .home-content {
@@ -195,7 +195,7 @@ footer .wrapper .row-footer {
 
 padding-bottom: 20px;
 padding-left: 20px;
-width: 100% !important;
+width: 100% ;         //!important
 
 }
 
@@ -214,11 +214,11 @@ display: flex ;
 
 
 li:nth-child(-n+3) {
-    width: 30% !important;
+    width: 30%; // !important;
 }
 
 li:nth-child(n+4) {
-    width: 45% !important;
+    width: 45%; // !important;
     padding-top: 20px;
 }
     
