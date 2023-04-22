@@ -14,9 +14,17 @@ header .top-header a {
 }
 
 header .top-header a:hover {
-  color: pink;
+  /* color: pink; */
   box-shadow: 0px 0px 10px 0px;
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  background-color: #eeaeca;
+  color: white;
+  border: 2px solid black;
+  text-align: center;
+  display: block;
+  width: 120px;
+  padding: 2px;
+
 }
 
 header nav ul {
