@@ -1,5 +1,12 @@
 // -----------------------------------------------responsive design ------------------------------------------------------------------------
-
+@media (max-width: 1025px) {
+    .home-content {
+      top:31%;
+    }
+    .home-content .content-container p {
+      font-size: 9px;
+    }
+  }
 @media (max-width: 765px) {
 
     // header section
@@ -102,7 +109,9 @@
         }
 
         .home-header .title-container h1 {
-            display: none;
+            // display: none;
+            font-size: 20px;
+            margin-left: 40px;
         }
 
 

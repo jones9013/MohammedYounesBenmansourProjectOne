@@ -635,6 +635,15 @@ footer .row-footer ul li i {
   margin-right: 5px;
 }
 
+@media (max-width: 1025px) {
+  .home-content {
+    top:31%;
+  }
+  .home-content .content-container p {
+    font-size: 9px;
+  }
+}
+
 @media (max-width: 765px) {
   .home-content {
     width: 50%;
@@ -704,7 +713,9 @@ footer .row-footer ul li i {
     display: none;
   }
   .home-header .title-container h1 {
-    display: none;
+    /* display: none; */
+    font-size: 20px;
+    margin-left: 40px;
   }
   .blog ul li .link-categories {
     width: 88px;
