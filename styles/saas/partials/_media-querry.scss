@@ -70,9 +70,7 @@
             
         }
 
-        // .hamburger-menu:focus-within  {
-        //     display: block;
-        // }
+      
 
         // making hover
 
@@ -132,7 +130,7 @@
         
             .gallery ul li {
                 width: calc( 50% - 10px) !important;
-                // display: flex;
+                
                 
             }
 
@@ -143,24 +141,6 @@
                     
                 }
 
-
-                /* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
-
-                // .big-sale .sale-brown-sofa .text-30-off p {
-                //     /* border: 2px solid white; */
-                //     /* font-size: 28px; */
-                //     border: 8px solid white !important;
-                //     font-size: 14px !important;
-                //     height: 24% !important;
-                    
-                //     font-weight: bold;
-                // }
-                
-                // .big-sale .sale-brown-sofa .text-30-off {
-                //     /* top: 10px; */
-                //     bottom: 118px ;
-                //     left: 53px;
-                // }
 
 
                 .big-sale .sale-brown-sofa p {
@@ -175,16 +155,24 @@
                 .sofa-discounts .big-sale .sale-white-sofa .img-50-off {
                     padding-top: 20px;
                 }
+
+                // -------------------------instagram section ------------------------------------
+
+                .instagram ul {
+                    flex-wrap: wrap ;
+                    display: flex ;
+                    }
+                    
+                    li:nth-child(-n+3) {
+                        width: 30%; 
+                    }
+                    
+                    li:nth-child(n+4) {
+                        width: 45%; 
+                        padding-top: 20px;
+                    }
 // ----------------------------------------------footer-----------------------------------------------------------------------------------
 
-
-
-/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
-
-// footer .wrapper .row-footer {
-
-//     // width: 100% !important;
-//   }
 
 footer .wrapper {
 flex-direction: column;
@@ -195,32 +183,11 @@ footer .wrapper .row-footer {
 
 padding-bottom: 20px;
 padding-left: 20px;
-width: 100% ;         //!important
+width: 100% ;        
 
 }
 
 
-/* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
-
-.instagram ul {
-flex-wrap: wrap ;
-display: flex ;
-}
-
-
-
-
-
-
-
-li:nth-child(-n+3) {
-    width: 30%; // !important;
-}
-
-li:nth-child(n+4) {
-    width: 45%; // !important;
-    padding-top: 20px;
-}
     
 
     }
