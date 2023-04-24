@@ -642,6 +642,25 @@ footer .row-footer ul li i {
   .home-content .content-container p {
     font-size: 9px;
   }
+  .big-sale .sale-brown-sofa p {
+    visibility: hidden;
+  }
+  .big-sale .sale-brown-sofa p span.percentage-big-size {
+    visibility: visible;
+    font-size: 40px;
+    margin-left: 122px;
+  }
+  footer .wrapper {
+    padding: 40px;
+  }
+
+  header .contact-header .title-content {
+    top:19%;
+  }
+  header .contact-header h1 {
+    font-size: 28px;
+
+  }
 }
 
 @media (max-width: 765px) {
@@ -744,6 +763,7 @@ footer .row-footer ul li i {
   }
   .big-sale .sale-brown-sofa p span.percentage-big-size {
     visibility: visible;
+    margin-left: 0px;
   }
   .sofa-discounts .big-sale .sale-white-sofa .img-50-off {
     padding-top: 20px;

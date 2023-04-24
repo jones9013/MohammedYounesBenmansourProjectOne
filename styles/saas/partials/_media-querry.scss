@@ -1,4 +1,6 @@
 // -----------------------------------------------responsive design ------------------------------------------------------------------------
+
+// Tablet display
 @media (max-width: 1025px) {
     .home-content {
       top:31%;
@@ -6,7 +8,29 @@
     .home-content .content-container p {
       font-size: 9px;
     }
+
+    // adjusting the discount for the brown sofa
+    .big-sale .sale-brown-sofa p span.percentage-big-size {
+        visibility: visible;
+        font-size: 40px;
+        margin-left: 122px;
+      }
+// footer
+    footer .wrapper {
+        padding: 40px;
+    }
+
+    // styling the h1 of the contact page I kept the same style as home page just added class for contact-title and header
+    header .contact-header .title-content {
+        top:19%;
+      }
+      header .contact-header h1 {
+        font-size: 28px;
+    
+      }
   }
+
+//   mobile display
 @media (max-width: 765px) {
 
     // header section
@@ -157,6 +181,7 @@
                   }
                   .big-sale .sale-brown-sofa p span.percentage-big-size {
                     visibility: visible;
+                    margin-left: 0px;
                   }
                   
 
