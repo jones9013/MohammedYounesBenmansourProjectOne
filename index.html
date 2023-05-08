@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles/styles.css" />
 
     <!-- linking to js -->
-    <script src="./script.js"></script>
+    <!-- <script src="./scripts.js"></script> -->
 
     <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,7 +22,6 @@
 
   <body>
     <!-- font awesome -->
-
     <script
       src="https://kit.fontawesome.com/6398177c60.js"
       crossorigin="anonymous"
@@ -40,6 +39,7 @@
             <li><a href="#HOME">HOME</a></li>
             <li><a href="#BLOG">BLOG</a></li>
             <li><a href="contact.html" target="_blank">CONTACT US</a></li>
+            <li><a href="signUp.html" target="_blank">sign-up</a></li>
           </ul>
         </nav>
         <div class="shop-cart-container">
@@ -47,6 +47,8 @@
             src="./assets/icons/shopping-cart-black-icon.png"
             alt="shop-cart"
           />
+          <!-- i added new cart for js -->
+          <a href="" class="new-cart"><i class="fa-solid fa-cart-plus"></i></a>
         </div>
       </div>
 
@@ -68,6 +70,20 @@
               aliquid quo exercitationem.
             </p>
           </div>
+        </div>
+      </div>
+
+      <!-- modal -->
+      <div class="modal">
+        <div class="modal-absolute hidden">
+          <button class="close-modal">&times;</button>
+          <p>join the new</p>
+          <p class="modal-big-size">10% off with email sign up</p>
+          <form class="modal-form" action="submit.php" method="post">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <input type="submit" value="Submit" />
+          </form>
         </div>
       </div>
 
@@ -311,6 +327,8 @@
 
       <section class="wrapper instagram">
         <h2>Follow instagram</h2>
+        <button class="caroussel-button prev">&#8592;</button>
+        <button class="caroussel-button next">&#8594;</button>
         <ul>
           <li><img src="./assets/ig4.jpg" alt="instagram-img1" /></li>
           <li><img src="./assets/ig1.jpg" alt="instagram-img2" /></li>
@@ -396,5 +414,13 @@
         </div>
       </div>
     </footer>
+    <script>
+      const modal = document.querySelector(".modal");
+      const BtnCloseModal = document.querySelector(".close-modal");
+
+      BtnCloseModal.addEventListener(`click`, function () {
+        modal.style.display = `none`;
+      });
+    </script>
   </body>
 </html>

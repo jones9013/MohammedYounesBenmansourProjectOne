@@ -8,7 +8,12 @@ body {
   margin: 0;
 }
 
-article, aside, footer, header, nav, section {
+article,
+aside,
+footer,
+header,
+nav,
+section {
   display: block;
 }
 
@@ -17,7 +22,9 @@ h1 {
   margin: 0.67em 0;
 }
 
-figcaption, figure, main {
+figcaption,
+figure,
+main {
   display: block;
 }
 
@@ -45,18 +52,22 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
-b, strong {
+b,
+strong {
   font-weight: inherit;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bolder;
 }
 
-code, kbd, samp {
+code,
+kbd,
+samp {
   font-family: monospace, monospace;
   font-size: 1em;
 }
@@ -74,7 +85,8 @@ small {
   font-size: 80%;
 }
 
-sub, sup {
+sub,
+sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
@@ -89,7 +101,8 @@ sup {
   top: -0.5em;
 }
 
-audio, video {
+audio,
+video {
   display: inline-block;
 }
 
@@ -106,31 +119,46 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-button, input, optgroup, select, textarea {
+button,
+input,
+optgroup,
+select,
+textarea {
   font-family: sans-serif;
   font-size: 100%;
   line-height: 1.15;
   margin: 0;
 }
 
-button, input {
+button,
+input {
   overflow: visible;
 }
 
-button, select {
+button,
+select {
   text-transform: none;
 }
 
-button, html [type=button], [type=reset], [type=submit] {
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
   -webkit-appearance: button;
 }
 
-button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner {
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
   border-style: none;
   padding: 0;
 }
 
-button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring {
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
 }
 
@@ -156,21 +184,24 @@ textarea {
   overflow: auto;
 }
 
-[type=checkbox], [type=radio] {
+[type="checkbox"],
+[type="radio"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
   height: auto;
 }
 
-[type=search] {
+[type="search"] {
   -webkit-appearance: textfield;
   outline-offset: -2px;
 }
 
-[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -179,7 +210,8 @@ textarea {
   font: inherit;
 }
 
-details, menu {
+details,
+menu {
   display: block;
 }
 
@@ -221,7 +253,7 @@ template {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -303,6 +335,7 @@ h1 {
 .home-header {
   display: flex;
   flex-direction: column;
+  /* position: relative; */
 }
 
 .img-home-container {
@@ -507,7 +540,7 @@ h2 {
 
 .sofa-discounts .big-sale .img-30-off,
 .sofa-discounts .big-sale .img-50-off {
-  posItion: relative;
+  position: relative;
 }
 
 .big-sale .sale-brown-sofa .text-30-off {
@@ -569,7 +602,8 @@ h2 {
   width: 100%;
 }
 
-.img-30-off, .img-50-off {
+.img-30-off,
+.img-50-off {
   width: 80%;
 }
 
@@ -637,7 +671,7 @@ footer .row-footer ul li i {
 
 @media (max-width: 1025px) {
   .home-content {
-    top:31%;
+    top: 31%;
   }
   .home-content .content-container p {
     font-size: 9px;
@@ -655,11 +689,10 @@ footer .row-footer ul li i {
   }
 
   header .contact-header .title-content {
-    top:19%;
+    top: 19%;
   }
   header .contact-header h1 {
     font-size: 28px;
-
   }
 }
 
@@ -715,8 +748,8 @@ footer .row-footer ul li i {
   }
   .hamburger-menu .drop-down li:hover {
     align-items: center;
-    background-color: #DEFA75;
-    width: 100% ;
+    background-color: #defa75;
+    width: 100%;
     display: flex;
     height: 27px;
     align-items: center;
@@ -757,7 +790,7 @@ footer .row-footer ul li i {
   .sofa-discounts .big-sale {
     flex-direction: column;
   }
- 
+
   .big-sale .sale-brown-sofa p {
     visibility: hidden;
   }
@@ -768,7 +801,7 @@ footer .row-footer ul li i {
   .sofa-discounts .big-sale .sale-white-sofa .img-50-off {
     padding-top: 20px;
   }
-  
+
   footer .wrapper {
     flex-direction: column;
   }
@@ -777,15 +810,12 @@ footer .row-footer ul li i {
     padding-left: 20px;
     width: 100%;
   }
- 
+
   .instagram ul {
     flex-wrap: wrap;
     display: flex;
   }
-  
 }
-
-
 
 /* styling the contact page, I used the same home page styles for the nav bar and the footer */
 
@@ -803,14 +833,15 @@ footer .row-footer ul li i {
 .contact-main form {
   display: flex;
   flex-direction: column;
-  align-items: ;
+  /* align-items: ; */
   justify-content: space-between;
   height: 70%;
   flex-wrap: wrap;
 }
 
-.contact-main form .group-form input, textarea {
-  border:none;
+.contact-main form .group-form input,
+textarea {
+  border: none;
   border-bottom: 1px solid black;
 }
 
@@ -828,6 +859,178 @@ footer .row-footer ul li i {
   border: 2px solid black;
 }
 
+/* new */
+.shop-cart-container img {
+  position: relative;
+}
 
+.new-cart {
+  position: absolute;
+  right: 26px;
+  top: 15px;
+}
 
+.new-cart .fa-cart-plus {
+  font-size: 20px;
+}
 
+.caroussel-button {
+  position: absolute;
+}
+
+.instagram {
+  position: relative;
+}
+.instagram ul li img {
+  object-fit: cover;
+}
+
+.caroussel-button {
+  position: absolute;
+}
+
+.caroussel-button.prev {
+  top: 50%;
+  right: 100%;
+}
+
+.caroussel-button.next {
+  top: 50%;
+  left: 100%;
+}
+/* modal */
+.modal {
+  position: relative;
+  height: 100vh;
+  display: block;
+  position: absolute;
+  left: 60%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+}
+.modal-absolute {
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  border: 2px solid beige;
+  height: 210px;
+  width: 419px;
+  text-align: center;
+  background-color: #defa75;
+}
+
+.close-modal {
+  position: absolute;
+  right: 0px;
+}
+.modal-big-size {
+  font-size: 30px;
+}
+
+/* the new page of sign up */
+
+.sign-up-container {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+    rgba(0, 0, 50, 0.8),
+    rgba(0, 0, 50, 0.8),
+    url(../assets/home.jpg)
+  );
+}
+
+.sign-up-container {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 50, 0.8), rgba(0, 0, 50, 0.8)),
+    url(../assets/home.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.form-sign-up {
+  width: 90%;
+  max-width: 500px;
+  position: absolute;
+  /* top: 20%; */
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+  background-color: white;
+  padding: 50px 60px 70px;
+  text-align: center;
+}
+.form-sign-up h1 {
+  position: relative;
+  font-size: 30px;
+  color: orange;
+  padding: 20px;
+}
+
+/* .form-sign-up h1::after {
+  content: "";
+  width: 30px;
+  height: 4px;
+  border-radius: 3px;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  /* top: 20%; */
+/* background-color: red;
+  transform: translate(-50%);
+} */
+.input-fields {
+  background-color: #eeaeca;
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+  /* display: block; */
+  max-height: 65px;
+  overflow: hidden;
+}
+
+.input-fields input {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  padding: 20px 15px;
+}
+
+.input-fields i {
+  margin-right: 20px;
+  margin-left: 15px;
+  color: blue;
+}
+
+.sign-up-container form p {
+  text-align: left;
+  font-size: 12px;
+}
+.sign-up-container form p a {
+  color: red;
+}
+
+.btn-field {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-field button {
+  width: 40%;
+  background-color: rgb(169, 238, 240);
+  border: 0;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.input-group {
+  height: 300px;
+}
+
+.btn-field .disable {
+  background-color: gray;
+  /* opacity: 0; */
+}
