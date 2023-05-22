@@ -297,6 +297,7 @@ header .top-header {
   height: 14vh;
   align-items: center;
   padding: 20px;
+  position: relative;
 }
 
 header .top-header a {
@@ -874,6 +875,8 @@ textarea {
   font-size: 20px;
 }
 
+/* caroussel */
+
 .caroussel-button {
   position: absolute;
 }
@@ -898,6 +901,7 @@ textarea {
   top: 50%;
   left: 100%;
 }
+
 /* modal */
 .modal {
   position: relative;
@@ -1033,4 +1037,119 @@ textarea {
 .btn-field .disable {
   background-color: gray;
   /* opacity: 0; */
+}
+
+/* styling cart section */
+.whole-cart .cart-container {
+  width: 100%;
+  display: none;
+  height: 100vh;
+  justify-content: center;
+
+  /* display: block; need it for js */
+}
+/* styling btn close */
+#close-btn-cart {
+  right: 2%;
+  position: absolute;
+}
+/* styling the total div */
+.cart-container .cart-modal .total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+}
+
+/* styling the whole cart  */
+
+.whole-cart {
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 800px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 9999;
+  /* transform: translateX(-200%); */
+}
+/* just trying with cart btn */
+cart-btn {
+  right: -7%;
+  visibility: visible;
+  transform: none;
+  z-index: 9999;
+  position: absolute;
+  transform: translateX(200%);
+  background-color: red;
+  visibility: visible;
+}
+/* styling the size of the image */
+.items-container .card img {
+  height: 200px;
+  width: 160px;
+  border: 1px solid black;
+}
+
+/* flexing the product container */
+
+.items-container {
+  display: none;
+  flex-direction: column;
+}
+
+/* flexing images with button and price */
+.items-container {
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+/* changing the order of the button */
+.add-to-cart {
+  order: 1;
+}
+
+/* positioning the cart and number on the top of the page  */
+/* .cart-btn {
+  position: absolute;
+  top: 10%;
+  left: 99%;
+  z-index: 3;
+  cursor: pointer;
+} */
+/* positioning the numer of items add over cart icon */
+
+#cart {
+  position: absolute;
+  right: 5%;
+  cursor: pointer;
+  font-size: 31px;
+}
+
+.cart-quantity {
+  position: absolute;
+  right: 5%;
+  color: white;
+  font-weight: solid;
+  font-weight: bold;
+
+  font-size: 24px;
+  top: 8%;
+  border: 1px solid red;
+  box-sizing: content-box;
+  width: 15px;
+  background-color: red;
+}
+
+/* cart-image */
+.cart-image {
 }

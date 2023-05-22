@@ -42,13 +42,94 @@
             <li><a href="signUp.html" target="_blank">sign-up</a></li>
           </ul>
         </nav>
-        <div class="shop-cart-container">
+        <!-- creating shop cart icon -->
+        <!-- <div class="shop-cart-container">
           <img
             src="./assets/icons/shopping-cart-black-icon.png"
             alt="shop-cart"
           />
           <!-- i added new cart for js -->
-          <a href="" class="new-cart"><i class="fa-solid fa-cart-plus"></i></a>
+        <!-- <a href="" class="new-cart"><i class="fa-solid fa-cart-plus"></i></a>
+        </div> -->
+        <div class="cart-btn">
+          <i id="cart" class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-quantity">0</span>
+        </div>
+      </div>
+
+      <!-- creating cart section  -->
+
+      <!-- making cart modal  -->
+      <div class="whole-cart">
+        <div class="cart-container">
+          <div class="cart-modal">
+            <i id="close-btn-cart" class="fa-solid fa-square-xmark"></i>
+            <h1 class="cart-is-empty">Cart is empty</h1>
+            <div class="product-cart"></div>
+            <div class="total">
+              <h1 class="cart-total">Total</h1>
+              <span class="total-price">$0</span>
+              <button class="purchase-btn">PURCHASE</button>
+            </div>
+          </div>
+        </div>
+        <!-- End of the cart modal -->
+        <!-- <div class="cart-btn">
+          <i id="cart" class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-quantity">0</span>
+        </div> -->
+        <!-- my products -->
+        <div class="items-container">
+          <div class="card-1 card">
+            <img class="product-image" src="./assets/prod-1.jpg" alt="" />
+            <button class="add-to-cart">Add to Cart</button>
+            <span class="product-price">$</span>
+          </div>
+          <div class="card-2 card">
+            <img class="product-image" src="./assets/prod-2.jpg" alt="" />
+            <button class="add-to-cart">Add to Cart</button>
+            <span class="product-price">$</span>
+          </div>
+          <div class="card-3 card">
+            <img class="product-image" src="./assets/prod-3.jpg" alt="" />
+            <button class="add-to-cart">Add to Cart</button>
+            <span class="product-price">$</span>
+          </div>
+          <div class="card-4 card">
+            <img class="product-image" src="./assets/prod-4.jpg" alt="" />
+            <button class="add-to-cart">Add to Cart</button>
+            <span class="product-price">$</span>
+          </div>
+          <div class="card-5 card">
+            <img class="product-image" src="./assets/prod-5.jpg" alt="" />
+            <button class="add-to-cart">Add to Cart</button>
+            <span class="product-price">$</span>
+          </div>
+          <div class="card-6 card">
+            <img class="product-image" src="./assets/prod-6.jpg" alt="" />
+            <button class="add-to-cart">Add to Cart</button>
+            <span class="product-price">$</span>
+          </div>
+          <div class="card-7 card">
+            <img class="product-image" src="./assets/prod-7.jpg" alt="" />
+            <button class="add-to-cart">Add to Cart</button>
+            <span class="product-price">$</span>
+          </div>
+          <div class="card-8 card">
+            <img class="product-image" src="./assets/prod-8.jpg" alt="" />
+            <button class="add-to-cart">Add to Cart</button>
+            <span class="product-price">$</span>
+          </div>
+          <div class="card-9 card">
+            <img class="product-image" src="./assets/prod-9.jpg" alt="" />
+            <button class="add-to-cart">Add to Cart</button>
+            <span class="product-price">$</span>
+          </div>
+          <div class="card-10 card">
+            <img class="product-image" src="./assets/prod-10.jpg" alt="" />
+            <button class="add-to-cart">Add to Cart</button>
+            <span class="product-price">$</span>
+          </div>
         </div>
       </div>
 
@@ -139,10 +220,9 @@
                 <img src="./assets/prod-1.jpg" alt="malmchair" />
                 <div class="product-name">
                   <h3>malm chair</h3>
-                  <i
-                    class="fa-solid fa-cart-shopping"
-                    style="color: #111212"
-                  ></i>
+                  <button class="add-the-item">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
                 </div>
                 <span class="price-before">35$</span
                 ><span class="price-after">22$</span>
@@ -156,10 +236,9 @@
                 <img src="./assets/prod-2.jpg" alt="pendant lamp" />
                 <div class="product-name">
                   <h3>pendant lamp</h3>
-                  <i
-                    class="fa-solid fa-cart-shopping"
-                    style="color: #111212"
-                  ></i>
+                  <button class="add-the-item">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
                 </div>
                 <span class="price-after">45$</span>
               </div>
@@ -171,10 +250,9 @@
                 <img src="./assets/prod-3.jpg" alt="magnolia dream" />
                 <div class="product-name">
                   <h3>Magnolia dream</h3>
-                  <i
-                    class="fa-solid fa-cart-shopping"
-                    style="color: #111212"
-                  ></i>
+                  <button class="add-the-item">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
                 </div>
                 <span class="price-after">22$</span>
                 <span class="promo-new">New</span>
@@ -187,10 +265,9 @@
                 <img src="./assets/prod-4.jpg" alt="malm chair" />
                 <div class="product-name">
                   <h3>malm chair</h3>
-                  <i
-                    class="fa-solid fa-cart-shopping"
-                    style="color: #111212"
-                  ></i>
+                  <button class="add-the-item">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
                 </div>
                 <span class="price-after">22$</span>
               </div>
@@ -202,10 +279,9 @@
                 <img src="./assets/prod-5.jpg" alt="pendant lamp" />
                 <div class="product-name">
                   <h3>Pendant lamp</h3>
-                  <i
-                    class="fa-solid fa-cart-shopping"
-                    style="color: #111212"
-                  ></i>
+                  <button class="add-the-item">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
                 </div>
                 <span class="price-after">22$</span>
               </div>
@@ -217,10 +293,9 @@
                 <img src="./assets/prod-6.jpg" alt="candle" />
                 <div class="product-name">
                   <h3>candle</h3>
-                  <i
-                    class="fa-solid fa-cart-shopping"
-                    style="color: #111212"
-                  ></i>
+                  <button class="add-the-item">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
                 </div>
                 <span class="price-after">22$</span>
               </div>
@@ -233,7 +308,9 @@
               </div>
               <div class="product-name">
                 <h3>lorem ipsum</h3>
-                <i class="fa-solid fa-cart-shopping" style="color: #111212"></i>
+                <button class="add-the-item">
+                  <i class="fa-solid fa-cart-plus"></i>
+                </button>
               </div>
               <span class="price-after">22$</span>
               <!-- i have to check this div again -->
@@ -246,10 +323,9 @@
                 <img src="./assets/prod-8.jpg" alt="pendant lamp" />
                 <div class="product-name">
                   <h3>pendant lamp</h3>
-                  <i
-                    class="fa-solid fa-cart-shopping"
-                    style="color: #111212"
-                  ></i>
+                  <button class="add-the-item">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
                 </div>
                 <span class="price-after">22$</span>
               </div>
@@ -261,10 +337,9 @@
                 <img src="./assets/prod-9.jpg" alt="" />
                 <div class="product-name">
                   <h3>pendant lamp</h3>
-                  <i
-                    class="fa-solid fa-cart-shopping"
-                    style="color: #111212"
-                  ></i>
+                  <button class="add-the-item">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
                 </div>
                 <span class="price-after">22$</span>
               </div>
@@ -276,10 +351,9 @@
                 <img src="./assets/prod-10.jpg" alt="pendant lamp" />
                 <div class="product-name">
                   <h3>pendant lamp</h3>
-                  <i
-                    class="fa-solid fa-cart-shopping"
-                    style="color: #111212"
-                  ></i>
+                  <button class="add-the-item">
+                    <i class="fa-solid fa-cart-plus"></i>
+                  </button>
                 </div>
                 <span class="price-after">22$</span>
               </div>
@@ -414,13 +488,42 @@
         </div>
       </div>
     </footer>
-    <script>
+    <!-- <script>
       const modal = document.querySelector(".modal");
       const BtnCloseModal = document.querySelector(".close-modal");
 
       BtnCloseModal.addEventListener(`click`, function () {
         modal.style.display = `none`;
       });
-    </script>
+
+      // js for cart section
+
+      const cart = document.querySelector(`#cart`);
+      const cartContainer = document.querySelector(`.cart-container`);
+      // open cart modal
+
+      cart.addEventListener("click", function () {
+        if (cartContainer.style.display === "none") {
+          cartContainer.style.display = "flex";
+        } else {
+          cartContainer.style.display = "none";
+        }
+      });
+      // End for cart modal
+
+      // close cart modal with x
+      const closeBtnCart = document.querySelector(`#close-btn-cart`);
+      closeBtnCart.addEventListener(`click`, function () {
+        cartContainer.style.display = "none";
+      });
+
+      cartContainer.addEventListener(`click`, (e) => {
+        if (e.target.classList.contains(`cart-container`)) {
+          cartContainer.style.display = `none`;
+        }
+      });
+    </script> -->
+
+    <script src="./scripts.js"></script>
   </body>
 </html>
