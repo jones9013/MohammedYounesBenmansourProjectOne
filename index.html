@@ -43,17 +43,14 @@
           </ul>
         </nav>
         <!-- creating shop cart icon -->
-        <!-- <div class="shop-cart-container">
-          <img
-            src="./assets/icons/shopping-cart-black-icon.png"
-            alt="shop-cart"
-          />
-          <!-- i added new cart for js -->
-        <!-- <a href="" class="new-cart"><i class="fa-solid fa-cart-plus"></i></a>
-        </div> -->
+
         <div class="cart-btn">
           <i id="cart" class="fa-solid fa-cart-shopping"></i>
           <span class="cart-quantity">0</span>
+        </div>
+        <div class="product-row">
+          <div id="cart-prodcuts"></div>
+          <p id="total-price"></p>
         </div>
       </div>
 
@@ -65,7 +62,7 @@
           <div class="cart-modal">
             <i id="close-btn-cart" class="fa-solid fa-square-xmark"></i>
             <h1 class="cart-is-empty">Cart is empty</h1>
-            <div class="product-cart"></div>
+            <div class="product-row"></div>
             <div class="total">
               <h1 class="cart-total">Total</h1>
               <span class="total-price">$0</span>
@@ -74,63 +71,6 @@
           </div>
         </div>
         <!-- End of the cart modal -->
-        <!-- <div class="cart-btn">
-          <i id="cart" class="fa-solid fa-cart-shopping"></i>
-          <span class="cart-quantity">0</span>
-        </div> -->
-        <!-- my products -->
-        <div class="items-container">
-          <div class="card-1 card">
-            <img class="product-image" src="./assets/prod-1.jpg" alt="" />
-            <button class="add-to-cart">Add to Cart</button>
-            <span class="product-price">$</span>
-          </div>
-          <div class="card-2 card">
-            <img class="product-image" src="./assets/prod-2.jpg" alt="" />
-            <button class="add-to-cart">Add to Cart</button>
-            <span class="product-price">$</span>
-          </div>
-          <div class="card-3 card">
-            <img class="product-image" src="./assets/prod-3.jpg" alt="" />
-            <button class="add-to-cart">Add to Cart</button>
-            <span class="product-price">$</span>
-          </div>
-          <div class="card-4 card">
-            <img class="product-image" src="./assets/prod-4.jpg" alt="" />
-            <button class="add-to-cart">Add to Cart</button>
-            <span class="product-price">$</span>
-          </div>
-          <div class="card-5 card">
-            <img class="product-image" src="./assets/prod-5.jpg" alt="" />
-            <button class="add-to-cart">Add to Cart</button>
-            <span class="product-price">$</span>
-          </div>
-          <div class="card-6 card">
-            <img class="product-image" src="./assets/prod-6.jpg" alt="" />
-            <button class="add-to-cart">Add to Cart</button>
-            <span class="product-price">$</span>
-          </div>
-          <div class="card-7 card">
-            <img class="product-image" src="./assets/prod-7.jpg" alt="" />
-            <button class="add-to-cart">Add to Cart</button>
-            <span class="product-price">$</span>
-          </div>
-          <div class="card-8 card">
-            <img class="product-image" src="./assets/prod-8.jpg" alt="" />
-            <button class="add-to-cart">Add to Cart</button>
-            <span class="product-price">$</span>
-          </div>
-          <div class="card-9 card">
-            <img class="product-image" src="./assets/prod-9.jpg" alt="" />
-            <button class="add-to-cart">Add to Cart</button>
-            <span class="product-price">$</span>
-          </div>
-          <div class="card-10 card">
-            <img class="product-image" src="./assets/prod-10.jpg" alt="" />
-            <button class="add-to-cart">Add to Cart</button>
-            <span class="product-price">$</span>
-          </div>
-        </div>
       </div>
 
       <!-- trying new version of header  -->
@@ -217,7 +157,11 @@
           <li>
             <a href="">
               <div class="inside-gallery">
-                <img src="./assets/prod-1.jpg" alt="malmchair" />
+                <img
+                  class="product-image"
+                  src="./assets/prod-1.jpg"
+                  alt="malmchair"
+                />
                 <div class="product-name">
                   <h3>malm chair</h3>
                   <button class="add-the-item">
@@ -225,7 +169,7 @@
                   </button>
                 </div>
                 <span class="price-before">35$</span
-                ><span class="price-after">22$</span>
+                ><span class="product-price price-after">22$</span>
                 <span class="promo-sale">Sale</span>
               </div>
             </a>
@@ -233,7 +177,11 @@
           <li>
             <a href="">
               <div class="inside-gallery">
-                <img src="./assets/prod-2.jpg" alt="pendant lamp" />
+                <img
+                  class="product-image"
+                  src="./assets/prod-2.jpg"
+                  alt="pendant lamp"
+                />
                 <div class="product-name">
                   <h3>pendant lamp</h3>
                   <button class="add-the-item">
@@ -247,7 +195,11 @@
           <li>
             <a href="">
               <div class="inside-gallery">
-                <img src="./assets/prod-3.jpg" alt="magnolia dream" />
+                <img
+                  class="product-image"
+                  src="./assets/prod-3.jpg"
+                  alt="magnolia dream"
+                />
                 <div class="product-name">
                   <h3>Magnolia dream</h3>
                   <button class="add-the-item">
@@ -269,7 +221,7 @@
                     <i class="fa-solid fa-cart-plus"></i>
                   </button>
                 </div>
-                <span class="price-after">22$</span>
+                <span class="product-price price-after">22$</span>
               </div>
             </a>
           </li>
@@ -283,7 +235,7 @@
                     <i class="fa-solid fa-cart-plus"></i>
                   </button>
                 </div>
-                <span class="price-after">22$</span>
+                <span class="product-price price-after">22$</span>
               </div>
             </a>
           </li>
@@ -297,7 +249,7 @@
                     <i class="fa-solid fa-cart-plus"></i>
                   </button>
                 </div>
-                <span class="price-after">22$</span>
+                <span class="product-price price-after">22$</span>
               </div>
             </a>
           </li>
@@ -397,12 +349,11 @@
         </div>
       </section>
 
-      <!-- section instagram -->
+      <!-- section instagram  -->
 
       <section class="wrapper instagram">
         <h2>Follow instagram</h2>
-        <button class="caroussel-button prev">&#8592;</button>
-        <button class="caroussel-button next">&#8594;</button>
+
         <ul>
           <li><img src="./assets/ig4.jpg" alt="instagram-img1" /></li>
           <li><img src="./assets/ig1.jpg" alt="instagram-img2" /></li>

@@ -2,228 +2,216 @@
 
 // Tablet display
 @media (max-width: 1025px) {
-    .home-content {
-      top:31%;
-    }
-    .home-content .content-container p {
-      font-size: 9px;
-    }
-
-    // adjusting the discount for the brown sofa
-    .big-sale .sale-brown-sofa p span.percentage-big-size {
-        visibility: visible;
-        font-size: 40px;
-        margin-left: 122px;
-      }
-// footer
-    footer .wrapper {
-        padding: 40px;
-    }
-
-    // styling the h1 of the contact page I kept the same style as home page just added class for contact-title and header
-    header .contact-header .title-content {
-        top:19%;
-      }
-      header .contact-header h1 {
-        font-size: 28px;
-    
-      }
+  .home-content {
+    top: 31%;
   }
+  .home-content .content-container p {
+    font-size: 9px;
+  }
+
+  // adjusting the discount for the brown sofa
+  .big-sale .sale-brown-sofa p span.percentage-big-size {
+    visibility: visible;
+    font-size: 40px;
+    margin-left: 122px;
+  }
+  // footer
+  footer .wrapper {
+    padding: 40px;
+  }
+
+  // styling the h1 of the contact page I kept the same style as home page just added class for contact-title and header
+  header .contact-header .title-content {
+    top: 19%;
+  }
+  header .contact-header h1 {
+    font-size: 28px;
+  }
+}
 
 //   mobile display
 @media (max-width: 765px) {
+  // header section
+  .home-content {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    font-size: 15px;
+  }
 
-    // header section
-    .home-content {
-            width: 50%;
-            height: 100%;
-            position: absolute;
-            top: 20%;
-            left:0%;
-            font-size: 15px;
-          }
+  header .top-header {
+    display: none;
+  }
 
+  // mobile version
 
-        header .top-header {
-            display: none;
-        }
+  .hamburger-menu {
+    display: block;
+  }
 
-        // mobile version
-        
-        .hamburger-menu {
-            display: block;
-        }
+  .hamburger-menu .drop-down ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+  }
 
+  header {
+    position: relative;
+  }
 
-        .hamburger-menu .drop-down ul  {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-evenly;
-            height: 100%;
-        }
+  .nav-bar {
+    position: absolute;
+    left: 90%;
+    top: 0%;
+  }
 
-        header {
-            position: relative;
-        }
+  .hamburger-menu .drop-down {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(235, 219, 103, 0.3);
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+  }
 
-        .nav-bar {
-            position: absolute;
-            left: 90%;
-            top: 0%;
-            }
+  .hamburger-menu .drop-down ul {
+    width: 100%;
+  }
 
-        .hamburger-menu .drop-down {
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            background-color:rgba(235, 219, 103, 0.3);
-            padding: 20px;
-            width: 100%;
-            height: 100%;
-        }
+  .drop-down {
+    display: none;
+  }
+  // https://www.youtube.com/watch?v=lioXqUmAf_Y
 
-        .hamburger-menu .drop-down ul {
-            width: 100%;
-        }
+  .hamburger-menu:focus-within .drop-down {
+    display: block;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 
-        
+  // making hover
 
-        .drop-down {
-            display: none;
-            
-        }
-        // https://www.youtube.com/watch?v=lioXqUmAf_Y
+  .hamburger-menu .drop-down li:hover {
+    align-items: center;
+    background-color: #defa75;
+    width: 100% !important;
+    display: flex;
+    height: 27px;
+    align-items: center;
+    justify-content: center;
+  }
 
-        .hamburger-menu:focus-within .drop-down {
-            display: block;
-            padding-left: 0px;
-            padding-right: 0px;
-            
-        }
+  // styling the anchor
+  .hamburger-menu .drop-down li a {
+    font-size: 13px;
+    font-style: normal;
+    font-weight: bold;
+    color: rgba(155, 191, 240, 1.2);
+  }
 
-      
+  // hiding p from the header
+  .home-header p {
+    display: none;
+  }
 
-        // making hover
+  .home-header .title-container h1 {
+    // display: none;
+    font-size: 20px;
+    margin-left: 40px;
+  }
 
-        .hamburger-menu .drop-down li:hover {
-           
-            align-items: center;
-            background-color: #DEFA75;
-            width: 100% !important;
-            display: flex;
-            height: 27px;
-            align-items: center;
-            justify-content: center;
-            }
+  // -------------------------------------------------making the blog section ------------------------------------------------
 
-        // styling the anchor
-        .hamburger-menu .drop-down li a {
-            font-size: 13px;
-            font-style: normal;
-            font-weight: bold;
-            color: rgba(155, 191, 240, 1.2);
-          }
-        
+  .blog ul li .link-categories {
+    width: 88px;
+  }
+  .blog ul li .link-categories a {
+    font-size: 10px;
+    padding-right: 30px;
+  }
 
+  // -------------------------------------------------gallery section--------------------------------------------------------
 
+  .gallery ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+  }
 
-        // hiding p from the header
-        .home-header p {
-            display: none;
-        }
+  .gallery ul li {
+    width: calc(50% - 10px) !important;
+  }
 
-        .home-header .title-container h1 {
-            // display: none;
-            font-size: 20px;
-            margin-left: 40px;
-        }
+  // --------------------------------------------------Discount section----------------------------------------------------------------------
+  .sofa-discounts .big-sale {
+    flex-direction: column !important;
+  }
 
+  .big-sale .sale-brown-sofa p {
+    visibility: hidden;
+  }
+  .big-sale .sale-brown-sofa p span.percentage-big-size {
+    visibility: visible;
+    margin-left: 0px;
+  }
 
-        // -------------------------------------------------making the blog section ------------------------------------------------
+  .sofa-discounts .big-sale .sale-white-sofa .img-50-off {
+    padding-top: 20px;
+  }
 
-        .blog ul li .link-categories {
-           
-            width: 88px;
-            }
-        .blog ul li .link-categories a {
-            font-size: 10px;
-            padding-right: 30px;
-            }
+  // -------------------------instagram section ------------------------------------
 
-            // -------------------------------------------------gallery section--------------------------------------------------------
+  .instagram ul {
+    flex-wrap: wrap;
+    display: flex;
+  }
 
-            .gallery ul {
-                display: flex;
-                justify-content: space-between;
-                align-items: flex-end;
-                flex-wrap: wrap;
-                width: 100%;
-                height: auto;
-              }
-        
-            .gallery ul li {
-                width: calc( 50% - 10px) !important;
-                
-                
-            }
+  li:nth-child(-n + 3) {
+    width: 30%;
+  }
 
-// --------------------------------------------------Discount section----------------------------------------------------------------------
-                .sofa-discounts .big-sale {
-                    
-                    flex-direction: column !important;
-                    
-                }
+  li:nth-child(n + 4) {
+    width: 45%;
+    padding-top: 20px;
+  }
+  // ----------------------------------------------footer-----------------------------------------------------------------------------------
 
+  footer .wrapper {
+    flex-direction: column;
+  }
 
+  footer .wrapper .row-footer {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 100%;
+  }
 
-                .big-sale .sale-brown-sofa p {
-                    visibility: hidden;
-                  }
-                  .big-sale .sale-brown-sofa p span.percentage-big-size {
-                    visibility: visible;
-                    margin-left: 0px;
-                  }
-                  
+  // hiding modal window
 
+  .modal-absolute {
+    top: 49%;
+    height: 163px;
+    width: 272px;
+    left: 20%;
+  }
 
-                .sofa-discounts .big-sale .sale-white-sofa .img-50-off {
-                    padding-top: 20px;
-                }
+  .modal-big-size {
+    font-size: 11px;
+  }
 
-                // -------------------------instagram section ------------------------------------
-
-                .instagram ul {
-                    flex-wrap: wrap ;
-                    display: flex ;
-                    }
-                    
-                    li:nth-child(-n+3) {
-                        width: 30%; 
-                    }
-                    
-                    li:nth-child(n+4) {
-                        width: 45%; 
-                        padding-top: 20px;
-                    }
-// ----------------------------------------------footer-----------------------------------------------------------------------------------
-
-
-footer .wrapper {
-flex-direction: column;
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-size: 84%;
+  }
 }
-
-
-footer .wrapper .row-footer {
-
-padding-bottom: 20px;
-padding-left: 20px;
-width: 100% ;        
-
-}
-
-
-    
-
-    }
-

@@ -816,6 +816,33 @@ footer .row-footer ul li i {
     flex-wrap: wrap;
     display: flex;
   }
+
+  /* modal window */
+
+  /* styles.css | file:///c:/Users/Family/Desktop/websites/Juno/projects/project-one/styles/styles.css */
+
+  .modal-absolute {
+    display: none;
+    position: absolute;
+    top: 49%;
+    height: 163px;
+    width: 272px;
+    left: 20%;
+  }
+
+  .modal-big-size {
+    /* font-size: 30px; */
+    font-size: 11px;
+  }
+
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    /* font-size: 100%; */
+    font-size: 84%;
+  }
 }
 
 /* styling the contact page, I used the same home page styles for the nav bar and the footer */
@@ -1151,5 +1178,3 @@ cart-btn {
 }
 
 /* cart-image */
-.cart-image {
-}

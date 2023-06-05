@@ -13,3 +13,50 @@
 .instagram ul li {
   width: calc(100% / 5 - 20px);
 }
+
+// .instagram {
+//   display: flex;
+//   justify-content: center;
+// }
+// .instagram-container {
+//   width: 750px;
+//   height: 750;
+//   overflow: hidden;
+//   border-radius: 10px;
+// }
+
+// .slider {
+//   display: flex;
+//   /* object-fit: cover;
+
+//   object-position: center; */
+//   transition: 0.8s ease;
+// }
+
+// .slider img {
+//   max-width: 100%;
+//   margin-right: 40px;
+//   max-height: 100%;
+// }
+
+// #prev,
+// #next {
+//   position: absolute;
+//   top: 50%;
+//   transform: translate(-5%, -50%);
+//   cursor: pointer;
+// }
+
+// #next {
+//   right: 20%;
+// }
+
+// #prev {
+//   left: 20%;
+// }
+
+// #next.disable,
+// #prev.disable {
+//   pointer-events: none;
+//   opacity: 0.3;
+// }

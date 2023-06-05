@@ -38,7 +38,7 @@ cartContainer.addEventListener(`click`, (e) => {
 // add items to cart
 
 const addTheItem = document.getElementsByClassName("add-the-item");
-const productCart = document.getElementsByClassName("product-cart");
+const productCart = document.getElementsByClassName("product-row");
 for (let i = 0; i < addTheItem.length; i++) {
   const addTheItemButton = addTheItem[i];
   addTheItemButton.addEventListener(`click`, addToCartClicked);
@@ -47,12 +47,12 @@ for (let i = 0; i < addTheItem.length; i++) {
 function addToCartClicked(event) {
   addTheItemButton = event.target;
   let cartItems = addTheItemButton.parentElement;
-  let price = cartItems.getElementsByClassName("product-price")[0].textContent;
+  let price = cartItems.getElementsByClassName("product-price")[0].innerText;
   let imageSrc = cartItems.getElementsByClassName("product-image")[0].src;
   addProductsToCart(price, imageSrc);
   updateCartPrice();
-  cartContainer.style.display = "none"; // i have to check this one
-  itemsContainer.style.display = "block";
+  // cartContainer.style.display = "none"; // i have to check this one
+  // itemsContainer.style.display = "block";
 }
 
 function addProductsToCart(price, imageSrc) {
@@ -60,4 +60,5 @@ function addProductsToCart(price, imageSrc) {
   productCart.classList.add("product-cart");
 
   let productsCart = document.getElementsByClassName("product-cart")[0];
+  let cartImage = document.getElementsByClassName;
 }
